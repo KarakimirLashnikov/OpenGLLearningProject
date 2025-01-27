@@ -1,0 +1,12 @@
+D:/MyCode/OpenGLCmakeProject/out/build/x64-debug/CMakeFiles/OpenGLCmakeProject.dir
+D:/MyCode/OpenGLCmakeProject/out/build/x64-debug/CMakeFiles/edit_cache.dir
+D:/MyCode/OpenGLCmakeProject/out/build/x64-debug/CMakeFiles/rebuild_cache.dir
+D:/MyCode/OpenGLCmakeProject/out/build/x64-debug/wrapper/CMakeFiles/wrapper.dir
+D:/MyCode/OpenGLCmakeProject/out/build/x64-debug/wrapper/CMakeFiles/edit_cache.dir
+D:/MyCode/OpenGLCmakeProject/out/build/x64-debug/wrapper/CMakeFiles/rebuild_cache.dir
+D:/MyCode/OpenGLCmakeProject/out/build/x64-debug/application/CMakeFiles/app.dir
+D:/MyCode/OpenGLCmakeProject/out/build/x64-debug/application/CMakeFiles/edit_cache.dir
+D:/MyCode/OpenGLCmakeProject/out/build/x64-debug/application/CMakeFiles/rebuild_cache.dir
+D:/MyCode/OpenGLCmakeProject/out/build/x64-debug/glframework/CMakeFiles/GLFramework.dir
+D:/MyCode/OpenGLCmakeProject/out/build/x64-debug/glframework/CMakeFiles/edit_cache.dir
+D:/MyCode/OpenGLCmakeProject/out/build/x64-debug/glframework/CMakeFiles/rebuild_cache.dir
