@@ -33,9 +33,9 @@ void prepareData()
 {
     GLfloat vertices[] = {
         // positions          // colors
-         0.5f,  0.5f, 0.0f,   1.0f, 0.0f, 0.0f,
-        -0.5f,  0.5f, 0.0f,   0.0f, 1.0f, 0.0f,
-         0.0f, -0.5f, 0.0f,   0.0f, 0.0f, 1.0f
+         0.5f,  0.5f, 0.0f,   1.0f, .0f, .0f,
+        -0.5f,  0.5f, 0.0f,   .0f, 1.0f, .0f,
+         0.0f, -0.5f, 0.0f,   .0f, .0f, 1.0f
     };
     // Generate object
     GLCALL(glGenVertexArrays(1, vao));
@@ -73,6 +73,8 @@ void render()
     // Use the shader program
     shader->begin();
     // Draw the object
+    float var = glfwGetTime();
+    shader->setUniform<1, float>("time", var); // update the uniform
     GLCALL(glBindVertexArray(vao[0]));
     GLCALL(glDrawArrays(GL_TRIANGLES, 0, 3));
     // Unbind the shader program

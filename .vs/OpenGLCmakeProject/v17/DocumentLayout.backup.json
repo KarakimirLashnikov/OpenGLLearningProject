@@ -7,24 +7,36 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\OpenGLCmakeProject.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\MyCode\\OpenGLCmakeProject\\glframework\\shaer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:glframework\\shaer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\MyCode\\OpenGLCmakeProject\\glframework\\shader.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:glframework\\shader.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\MyCode\\OpenGLCmakeProject\\glframework\\core.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:glframework\\core.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\MyCode\\OpenGLCmakeProject\\wrapper\\checkError.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:wrapper\\checkError.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\MyCode\\OpenGLCmakeProject\\glframework\\shaer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:glframework\\shaer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\MyCode\\OpenGLCmakeProject\\CMakeLists.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CMakeLists.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\MyCode\\OpenGLCmakeProject\\assets\\shaders\\vertex.glsl||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\shaders\\vertex.glsl||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\MyCode\\OpenGLCmakeProject\\assets\\shaders\\fragment.glsl||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\shaders\\fragment.glsl||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\MyCode\\OpenGLCmakeProject\\include\\OpenGLCmakeProject.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:include\\OpenGLCmakeProject.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\MyCode\\OpenGLCmakeProject\\wrapper\\checkError.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:wrapper\\checkError.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\MyCode\\OpenGLCmakeProject\\glframework\\core.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:glframework\\core.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\MyCode\\OpenGLCmakeProject\\wrapper\\checkError.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -38,7 +50,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 14,
+          "SelectedChildIndex": 16,
           "Children": [
             {
               "$type": "Bookmark",
@@ -74,19 +86,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
+              "Title": "vertex.glsl",
+              "DocumentMoniker": "D:\\MyCode\\OpenGLCmakeProject\\assets\\shaders\\vertex.glsl",
+              "RelativeDocumentMoniker": "assets\\shaders\\vertex.glsl",
+              "ToolTip": "D:\\MyCode\\OpenGLCmakeProject\\assets\\shaders\\vertex.glsl",
+              "RelativeToolTip": "assets\\shaders\\vertex.glsl",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-01-27T07:28:31.631Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "shader.hpp",
+              "DocumentMoniker": "D:\\MyCode\\OpenGLCmakeProject\\glframework\\shader.hpp",
+              "RelativeDocumentMoniker": "glframework\\shader.hpp",
+              "ToolTip": "D:\\MyCode\\OpenGLCmakeProject\\glframework\\shader.hpp",
+              "RelativeToolTip": "glframework\\shader.hpp",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAkwEwAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-01-27T07:20:28.865Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "CMakeLists.txt",
               "DocumentMoniker": "D:\\MyCode\\OpenGLCmakeProject\\CMakeLists.txt",
               "RelativeDocumentMoniker": "CMakeLists.txt",
               "ToolTip": "D:\\MyCode\\OpenGLCmakeProject\\CMakeLists.txt",
               "RelativeToolTip": "CMakeLists.txt",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABEAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA8AAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2025-01-27T06:45:42.708Z"
+              "WhenOpened": "2025-01-27T06:45:42.708Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 8,
               "Title": "core.h",
               "DocumentMoniker": "D:\\MyCode\\OpenGLCmakeProject\\glframework\\core.h",
               "RelativeDocumentMoniker": "glframework\\core.h",
@@ -98,31 +137,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "shaer.cpp",
               "DocumentMoniker": "D:\\MyCode\\OpenGLCmakeProject\\glframework\\shaer.cpp",
               "RelativeDocumentMoniker": "glframework\\shaer.cpp",
               "ToolTip": "D:\\MyCode\\OpenGLCmakeProject\\glframework\\shaer.cpp",
               "RelativeToolTip": "glframework\\shaer.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAjwFIAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-01-26T11:23:20.407Z"
+              "WhenOpened": "2025-01-26T11:23:20.407Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "checkError.hpp",
               "DocumentMoniker": "D:\\MyCode\\OpenGLCmakeProject\\wrapper\\checkError.hpp",
               "RelativeDocumentMoniker": "wrapper\\checkError.hpp",
               "ToolTip": "D:\\MyCode\\OpenGLCmakeProject\\wrapper\\checkError.hpp",
               "RelativeToolTip": "wrapper\\checkError.hpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAACAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-01-26T11:09:01.031Z"
+              "WhenOpened": "2025-01-26T11:09:01.031Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "checkError.cpp",
               "DocumentMoniker": "D:\\MyCode\\OpenGLCmakeProject\\wrapper\\checkError.cpp",
               "RelativeDocumentMoniker": "wrapper\\checkError.cpp",
@@ -134,15 +175,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "OpenGLCmakeProject.h",
               "DocumentMoniker": "D:\\MyCode\\OpenGLCmakeProject\\include\\OpenGLCmakeProject.h",
               "RelativeDocumentMoniker": "include\\OpenGLCmakeProject.h",
               "ToolTip": "D:\\MyCode\\OpenGLCmakeProject\\include\\OpenGLCmakeProject.h",
               "RelativeToolTip": "include\\OpenGLCmakeProject.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAywA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-01-26T10:52:14.735Z"
+              "WhenOpened": "2025-01-26T10:52:14.735Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -152,9 +194,22 @@
               "RelativeDocumentMoniker": "src\\OpenGLCmakeProject.cpp",
               "ToolTip": "D:\\MyCode\\OpenGLCmakeProject\\src\\OpenGLCmakeProject.cpp",
               "RelativeToolTip": "src\\OpenGLCmakeProject.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAATAAAAAAAAAA==",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAAAEoAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-01-26T10:38:19.622Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "fragment.glsl",
+              "DocumentMoniker": "D:\\MyCode\\OpenGLCmakeProject\\assets\\shaders\\fragment.glsl",
+              "RelativeDocumentMoniker": "assets\\shaders\\fragment.glsl",
+              "ToolTip": "D:\\MyCode\\OpenGLCmakeProject\\assets\\shaders\\fragment.glsl",
+              "RelativeToolTip": "assets\\shaders\\fragment.glsl",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-01-27T07:46:21.832Z",
               "EditorCaption": ""
             }
           ]

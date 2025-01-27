@@ -1,10 +1,21 @@
 # ninja log v6
 225	1028	7596635841650358	CMakeFiles/OpenGLCmakeProject.dir/src/glad.c.obj	604a7a27ccfd5fc0
-9	1288	7596635839496106	wrapper/CMakeFiles/wrapper.dir/checkError.cpp.obj	36734a7350b9fb3c
-122	1330	7596635840624997	glframework/CMakeFiles/GLFramework.dir/shaer.cpp.obj	bf73e57f347692f5
+27	1246	7596663753963885	glframework/CMakeFiles/GLFramework.dir/shaer.cpp.obj	bf73e57f347692f5
 69	1339	7596635840090934	application/CMakeFiles/app.dir/Application.cpp.obj	52afe3b093b99567
-1289	1533	7596635852282533	wrapper/wrapper.lib	50ec1ecda0b03e04
-1330	1559	7596635852702630	glframework/GLFramework.lib	51edb36a0d32a00f
+9	1288	7596635839496106	wrapper/CMakeFiles/wrapper.dir/checkError.cpp.obj	36734a7350b9fb3c
 1339	1584	7596635852792607	application/app.lib	69bcbad721490899
-174	1742	7596635841140362	CMakeFiles/OpenGLCmakeProject.dir/src/OpenGLCmakeProject.cpp.obj	972b16f44e072985
-1743	2715	7596635856832978	OpenGLCmakeProject.exe	758a39a777053f7a
+1289	1533	7596635852282533	wrapper/wrapper.lib	50ec1ecda0b03e04
+1247	1516	7596663766151801	glframework/GLFramework.lib	51edb36a0d32a00f
+31	1567	7596672659491159	CMakeFiles/OpenGLCmakeProject.dir/src/OpenGLCmakeProject.cpp.obj	972b16f44e072985
+1568	2199	7596672674853460	OpenGLCmakeProject.exe	758a39a777053f7a
+22	743	7596706671717766	glframework/CMakeFiles/GLFramework.dir/shaer.cpp.obj	bf73e57f347692f5
+744	922	7596706678933262	glframework/GLFramework.lib	51edb36a0d32a00f
+23	731	7596708073587284	glframework/CMakeFiles/GLFramework.dir/shaer.cpp.obj	bf73e57f347692f5
+732	874	7596708080674525	glframework/GLFramework.lib	51edb36a0d32a00f
+75	1081	7596708074112719	CMakeFiles/OpenGLCmakeProject.dir/src/OpenGLCmakeProject.cpp.obj	972b16f44e072985
+35	746	7596712707917990	glframework/CMakeFiles/GLFramework.dir/shaer.cpp.obj	bf73e57f347692f5
+747	889	7596712715031547	glframework/GLFramework.lib	51edb36a0d32a00f
+89	1105	7596712708458840	CMakeFiles/OpenGLCmakeProject.dir/src/OpenGLCmakeProject.cpp.obj	972b16f44e072985
+1105	1541	7596712718627384	OpenGLCmakeProject.exe	758a39a777053f7a
+23	1020	7596714004932325	CMakeFiles/OpenGLCmakeProject.dir/src/OpenGLCmakeProject.cpp.obj	972b16f44e072985
+1021	1442	7596714014910626	OpenGLCmakeProject.exe	758a39a777053f7a
