@@ -9,12 +9,6 @@
 #include <concepts>
 #include <cassert>
 
-// concept : Supported uniform variable number
-template <size_t N>
-concept UniformVariableNumber = (
-    N == 1 || N == 2 || N == 3 || N == 4
-    );
-
 // concept : Supported uniform variable type
 template <typename T>
 concept UniformVariableType = (
@@ -46,8 +40,14 @@ public:
     void begin() const; // begin use this shader
     void end() const; // end use this shader
 
-    // set uniform variable
-    template <size_t N, typename T, typename... Args>
+    /*
+    * @template param N: uniform variable number
+    * @template param T: uniform variable type
+    * @template param Args: uniform variable arguments
+    * @param name: uniform variable name
+    * @param args: uniform variable arguments
+    */
+    template <typename T, typename... Args>
     void setUniform(const std::string_view name, Args... args) const;
 };
 
@@ -61,14 +61,12 @@ inline void Shader::setUniform_impl(
 }
 
 // entry point for setUniform function
-template <size_t N, typename T, typename... Args>
+template <typename T, typename... Args>
 void Shader::setUniform(
     const std::string_view name, Args... args) const
 {
-    static_assert(
-        UniformVariableNumber<N>,
-        "Unsupported uniform variable number"
-        );
+    constexpr size_t N = sizeof...(Args);
+    assert(N > 0 && N <= 4);
     static_assert(
         UniformVariableType<T>,
         "Unsupported uniform variable type"

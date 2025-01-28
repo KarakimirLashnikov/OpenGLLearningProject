@@ -14,10 +14,10 @@
   "ExpandedNodes": [
     "",
     "\\assets",
-    "\\assets\\shaders",
-    "\\dependency\\include",
-    "\\glframework"
+    "\\assets\\textures",
+    "\\dependency",
+    "\\dependency\\include"
   ],
-  "SelectedNode": "\\glframework\\shaer.cpp",
+  "SelectedNode": "\\dependency",
   "PreviewInSolutionExplorer": false
 }

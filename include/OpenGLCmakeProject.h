@@ -5,13 +5,11 @@
 
 // TODO: 在此处引用程序需要的其他标头。
 #include "glframework/core.h"
-#include "glm/glm.hpp"
-#include "glm/gtc/type_ptr.hpp"
-#include "glm/gtc/matrix_transform.hpp"
 #include "SOIL2/stb_image.h"
 #include "application/Application.hpp"
 #include "glframework/Shader.hpp"
 
+#define STB_IMAGE_IMPLEMENTATION
 // cpp library
 #include <memory>
 using Shader_ptr = std::shared_ptr<Shader>;
