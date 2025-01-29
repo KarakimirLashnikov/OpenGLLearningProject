@@ -22,7 +22,7 @@ msvc_deps_prefix = 注意: 包含文件:
 
 rule C_COMPILER__OpenGLCmakeProject_unscanned_Debug
   deps = msvc
-  command = ${LAUNCHER}${CODE_CHECK}D:\Visual_Studio_2022\VC\Tools\MSVC\14.43.34618\bin\Hostx64\x64\cl.exe  /nologo $DEFINES $INCLUDES $FLAGS /showIncludes /Fo$out /Fd$TARGET_COMPILE_PDB /FS -c $in
+  command = ${LAUNCHER}${CODE_CHECK}D:\Visual_Studio_2022\VC\Tools\MSVC\14.43.34808\bin\Hostx64\x64\cl.exe  /nologo $DEFINES $INCLUDES $FLAGS /showIncludes /Fo$out /Fd$TARGET_COMPILE_PDB /FS -c $in
   description = Building C object $out
 
 
@@ -31,7 +31,7 @@ rule C_COMPILER__OpenGLCmakeProject_unscanned_Debug
 
 rule CXX_SCAN__OpenGLCmakeProject_Debug
   deps = msvc
-  command = D:\Visual_Studio_2022\VC\Tools\MSVC\14.43.34618\bin\Hostx64\x64\cl.exe $DEFINES $INCLUDES $FLAGS $in -nologo -TP -showIncludes -scanDependencies $DYNDEP_INTERMEDIATE_FILE -Fo$OBJ_FILE
+  command = D:\Visual_Studio_2022\VC\Tools\MSVC\14.43.34808\bin\Hostx64\x64\cl.exe $DEFINES $INCLUDES $FLAGS $in -nologo -TP -showIncludes -scanDependencies $DYNDEP_INTERMEDIATE_FILE -Fo$OBJ_FILE
   description = Scanning $in for CXX dependencies
 
 
@@ -51,7 +51,7 @@ rule CXX_DYNDEP__OpenGLCmakeProject_Debug
 
 rule CXX_COMPILER__OpenGLCmakeProject_scanned_Debug
   deps = msvc
-  command = ${LAUNCHER}${CODE_CHECK}D:\Visual_Studio_2022\VC\Tools\MSVC\14.43.34618\bin\Hostx64\x64\cl.exe  /nologo /TP $DEFINES $INCLUDES $FLAGS /showIncludes @$DYNDEP_MODULE_MAP_FILE /Fo$out /Fd$TARGET_COMPILE_PDB /FS -c $in
+  command = ${LAUNCHER}${CODE_CHECK}D:\Visual_Studio_2022\VC\Tools\MSVC\14.43.34808\bin\Hostx64\x64\cl.exe  /nologo /TP $DEFINES $INCLUDES $FLAGS /showIncludes @$DYNDEP_MODULE_MAP_FILE /Fo$out /Fd$TARGET_COMPILE_PDB /FS -c $in
   description = Building CXX object $out
 
 
@@ -60,7 +60,7 @@ rule CXX_COMPILER__OpenGLCmakeProject_scanned_Debug
 
 rule CXX_COMPILER__OpenGLCmakeProject_unscanned_Debug
   deps = msvc
-  command = ${LAUNCHER}${CODE_CHECK}D:\Visual_Studio_2022\VC\Tools\MSVC\14.43.34618\bin\Hostx64\x64\cl.exe  /nologo /TP $DEFINES $INCLUDES $FLAGS /showIncludes /Fo$out /Fd$TARGET_COMPILE_PDB /FS -c $in
+  command = ${LAUNCHER}${CODE_CHECK}D:\Visual_Studio_2022\VC\Tools\MSVC\14.43.34808\bin\Hostx64\x64\cl.exe  /nologo /TP $DEFINES $INCLUDES $FLAGS /showIncludes /Fo$out /Fd$TARGET_COMPILE_PDB /FS -c $in
   description = Building CXX object $out
 
 
@@ -68,7 +68,7 @@ rule CXX_COMPILER__OpenGLCmakeProject_unscanned_Debug
 # Rule for linking CXX executable.
 
 rule CXX_EXECUTABLE_LINKER__OpenGLCmakeProject_Debug
-  command = C:\Windows\system32\cmd.exe /C "$PRE_LINK && D:\Visual_Studio_2022\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -E vs_link_exe --intdir=$OBJECT_DIR --rc="D:\Windows Kits\10\bin\10.0.22621.0\x64\rc.exe" --mt="D:\Windows Kits\10\bin\10.0.22621.0\x64\mt.exe" --manifests $MANIFESTS -- D:\Visual_Studio_2022\VC\Tools\MSVC\14.43.34618\bin\Hostx64\x64\link.exe /nologo $in  /out:$TARGET_FILE /implib:$TARGET_IMPLIB /pdb:$TARGET_PDB /version:0.0 $LINK_FLAGS $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
+  command = C:\Windows\system32\cmd.exe /C "$PRE_LINK && D:\Visual_Studio_2022\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -E vs_link_exe --intdir=$OBJECT_DIR --rc="D:\Windows Kits\10\bin\10.0.22621.0\x64\rc.exe" --mt="D:\Windows Kits\10\bin\10.0.22621.0\x64\mt.exe" --manifests $MANIFESTS -- D:\Visual_Studio_2022\VC\Tools\MSVC\14.43.34808\bin\Hostx64\x64\link.exe /nologo $in  /out:$TARGET_FILE /implib:$TARGET_IMPLIB /pdb:$TARGET_PDB /version:0.0 $LINK_FLAGS $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
 
@@ -86,7 +86,7 @@ rule CUSTOM_COMMAND
 
 rule CXX_SCAN__wrapper_Debug
   deps = msvc
-  command = D:\Visual_Studio_2022\VC\Tools\MSVC\14.43.34618\bin\Hostx64\x64\cl.exe $DEFINES $INCLUDES $FLAGS $in -nologo -TP -showIncludes -scanDependencies $DYNDEP_INTERMEDIATE_FILE -Fo$OBJ_FILE
+  command = D:\Visual_Studio_2022\VC\Tools\MSVC\14.43.34808\bin\Hostx64\x64\cl.exe $DEFINES $INCLUDES $FLAGS $in -nologo -TP -showIncludes -scanDependencies $DYNDEP_INTERMEDIATE_FILE -Fo$OBJ_FILE
   description = Scanning $in for CXX dependencies
 
 
@@ -106,7 +106,7 @@ rule CXX_DYNDEP__wrapper_Debug
 
 rule CXX_COMPILER__wrapper_scanned_Debug
   deps = msvc
-  command = ${LAUNCHER}${CODE_CHECK}D:\Visual_Studio_2022\VC\Tools\MSVC\14.43.34618\bin\Hostx64\x64\cl.exe  /nologo /TP $DEFINES $INCLUDES $FLAGS /showIncludes @$DYNDEP_MODULE_MAP_FILE /Fo$out /Fd$TARGET_COMPILE_PDB /FS -c $in
+  command = ${LAUNCHER}${CODE_CHECK}D:\Visual_Studio_2022\VC\Tools\MSVC\14.43.34808\bin\Hostx64\x64\cl.exe  /nologo /TP $DEFINES $INCLUDES $FLAGS /showIncludes @$DYNDEP_MODULE_MAP_FILE /Fo$out /Fd$TARGET_COMPILE_PDB /FS -c $in
   description = Building CXX object $out
 
 
@@ -115,7 +115,7 @@ rule CXX_COMPILER__wrapper_scanned_Debug
 
 rule CXX_COMPILER__wrapper_unscanned_Debug
   deps = msvc
-  command = ${LAUNCHER}${CODE_CHECK}D:\Visual_Studio_2022\VC\Tools\MSVC\14.43.34618\bin\Hostx64\x64\cl.exe  /nologo /TP $DEFINES $INCLUDES $FLAGS /showIncludes /Fo$out /Fd$TARGET_COMPILE_PDB /FS -c $in
+  command = ${LAUNCHER}${CODE_CHECK}D:\Visual_Studio_2022\VC\Tools\MSVC\14.43.34808\bin\Hostx64\x64\cl.exe  /nologo /TP $DEFINES $INCLUDES $FLAGS /showIncludes /Fo$out /Fd$TARGET_COMPILE_PDB /FS -c $in
   description = Building CXX object $out
 
 
@@ -123,7 +123,7 @@ rule CXX_COMPILER__wrapper_unscanned_Debug
 # Rule for linking CXX static library.
 
 rule CXX_STATIC_LIBRARY_LINKER__wrapper_Debug
-  command = C:\Windows\system32\cmd.exe /C "$PRE_LINK && D:\Visual_Studio_2022\VC\Tools\MSVC\14.43.34618\bin\Hostx64\x64\lib.exe /nologo $LINK_FLAGS /out:$TARGET_FILE $in && $POST_BUILD"
+  command = C:\Windows\system32\cmd.exe /C "$PRE_LINK && D:\Visual_Studio_2022\VC\Tools\MSVC\14.43.34808\bin\Hostx64\x64\lib.exe /nologo $LINK_FLAGS /out:$TARGET_FILE $in && $POST_BUILD"
   description = Linking CXX static library $TARGET_FILE
   restat = $RESTAT
 
@@ -133,7 +133,7 @@ rule CXX_STATIC_LIBRARY_LINKER__wrapper_Debug
 
 rule CXX_SCAN__app_Debug
   deps = msvc
-  command = D:\Visual_Studio_2022\VC\Tools\MSVC\14.43.34618\bin\Hostx64\x64\cl.exe $DEFINES $INCLUDES $FLAGS $in -nologo -TP -showIncludes -scanDependencies $DYNDEP_INTERMEDIATE_FILE -Fo$OBJ_FILE
+  command = D:\Visual_Studio_2022\VC\Tools\MSVC\14.43.34808\bin\Hostx64\x64\cl.exe $DEFINES $INCLUDES $FLAGS $in -nologo -TP -showIncludes -scanDependencies $DYNDEP_INTERMEDIATE_FILE -Fo$OBJ_FILE
   description = Scanning $in for CXX dependencies
 
 
@@ -153,7 +153,7 @@ rule CXX_DYNDEP__app_Debug
 
 rule CXX_COMPILER__app_scanned_Debug
   deps = msvc
-  command = ${LAUNCHER}${CODE_CHECK}D:\Visual_Studio_2022\VC\Tools\MSVC\14.43.34618\bin\Hostx64\x64\cl.exe  /nologo /TP $DEFINES $INCLUDES $FLAGS /showIncludes @$DYNDEP_MODULE_MAP_FILE /Fo$out /Fd$TARGET_COMPILE_PDB /FS -c $in
+  command = ${LAUNCHER}${CODE_CHECK}D:\Visual_Studio_2022\VC\Tools\MSVC\14.43.34808\bin\Hostx64\x64\cl.exe  /nologo /TP $DEFINES $INCLUDES $FLAGS /showIncludes @$DYNDEP_MODULE_MAP_FILE /Fo$out /Fd$TARGET_COMPILE_PDB /FS -c $in
   description = Building CXX object $out
 
 
@@ -162,7 +162,7 @@ rule CXX_COMPILER__app_scanned_Debug
 
 rule CXX_COMPILER__app_unscanned_Debug
   deps = msvc
-  command = ${LAUNCHER}${CODE_CHECK}D:\Visual_Studio_2022\VC\Tools\MSVC\14.43.34618\bin\Hostx64\x64\cl.exe  /nologo /TP $DEFINES $INCLUDES $FLAGS /showIncludes /Fo$out /Fd$TARGET_COMPILE_PDB /FS -c $in
+  command = ${LAUNCHER}${CODE_CHECK}D:\Visual_Studio_2022\VC\Tools\MSVC\14.43.34808\bin\Hostx64\x64\cl.exe  /nologo /TP $DEFINES $INCLUDES $FLAGS /showIncludes /Fo$out /Fd$TARGET_COMPILE_PDB /FS -c $in
   description = Building CXX object $out
 
 
@@ -170,7 +170,7 @@ rule CXX_COMPILER__app_unscanned_Debug
 # Rule for linking CXX static library.
 
 rule CXX_STATIC_LIBRARY_LINKER__app_Debug
-  command = C:\Windows\system32\cmd.exe /C "$PRE_LINK && D:\Visual_Studio_2022\VC\Tools\MSVC\14.43.34618\bin\Hostx64\x64\lib.exe /nologo $LINK_FLAGS /out:$TARGET_FILE $in && $POST_BUILD"
+  command = C:\Windows\system32\cmd.exe /C "$PRE_LINK && D:\Visual_Studio_2022\VC\Tools\MSVC\14.43.34808\bin\Hostx64\x64\lib.exe /nologo $LINK_FLAGS /out:$TARGET_FILE $in && $POST_BUILD"
   description = Linking CXX static library $TARGET_FILE
   restat = $RESTAT
 
@@ -180,7 +180,7 @@ rule CXX_STATIC_LIBRARY_LINKER__app_Debug
 
 rule CXX_SCAN__GLFramework_Debug
   deps = msvc
-  command = D:\Visual_Studio_2022\VC\Tools\MSVC\14.43.34618\bin\Hostx64\x64\cl.exe $DEFINES $INCLUDES $FLAGS $in -nologo -TP -showIncludes -scanDependencies $DYNDEP_INTERMEDIATE_FILE -Fo$OBJ_FILE
+  command = D:\Visual_Studio_2022\VC\Tools\MSVC\14.43.34808\bin\Hostx64\x64\cl.exe $DEFINES $INCLUDES $FLAGS $in -nologo -TP -showIncludes -scanDependencies $DYNDEP_INTERMEDIATE_FILE -Fo$OBJ_FILE
   description = Scanning $in for CXX dependencies
 
 
@@ -200,7 +200,7 @@ rule CXX_DYNDEP__GLFramework_Debug
 
 rule CXX_COMPILER__GLFramework_scanned_Debug
   deps = msvc
-  command = ${LAUNCHER}${CODE_CHECK}D:\Visual_Studio_2022\VC\Tools\MSVC\14.43.34618\bin\Hostx64\x64\cl.exe  /nologo /TP $DEFINES $INCLUDES $FLAGS /showIncludes @$DYNDEP_MODULE_MAP_FILE /Fo$out /Fd$TARGET_COMPILE_PDB /FS -c $in
+  command = ${LAUNCHER}${CODE_CHECK}D:\Visual_Studio_2022\VC\Tools\MSVC\14.43.34808\bin\Hostx64\x64\cl.exe  /nologo /TP $DEFINES $INCLUDES $FLAGS /showIncludes @$DYNDEP_MODULE_MAP_FILE /Fo$out /Fd$TARGET_COMPILE_PDB /FS -c $in
   description = Building CXX object $out
 
 
@@ -209,7 +209,7 @@ rule CXX_COMPILER__GLFramework_scanned_Debug
 
 rule CXX_COMPILER__GLFramework_unscanned_Debug
   deps = msvc
-  command = ${LAUNCHER}${CODE_CHECK}D:\Visual_Studio_2022\VC\Tools\MSVC\14.43.34618\bin\Hostx64\x64\cl.exe  /nologo /TP $DEFINES $INCLUDES $FLAGS /showIncludes /Fo$out /Fd$TARGET_COMPILE_PDB /FS -c $in
+  command = ${LAUNCHER}${CODE_CHECK}D:\Visual_Studio_2022\VC\Tools\MSVC\14.43.34808\bin\Hostx64\x64\cl.exe  /nologo /TP $DEFINES $INCLUDES $FLAGS /showIncludes /Fo$out /Fd$TARGET_COMPILE_PDB /FS -c $in
   description = Building CXX object $out
 
 
@@ -217,7 +217,7 @@ rule CXX_COMPILER__GLFramework_unscanned_Debug
 # Rule for linking CXX static library.
 
 rule CXX_STATIC_LIBRARY_LINKER__GLFramework_Debug
-  command = C:\Windows\system32\cmd.exe /C "$PRE_LINK && D:\Visual_Studio_2022\VC\Tools\MSVC\14.43.34618\bin\Hostx64\x64\lib.exe /nologo $LINK_FLAGS /out:$TARGET_FILE $in && $POST_BUILD"
+  command = C:\Windows\system32\cmd.exe /C "$PRE_LINK && D:\Visual_Studio_2022\VC\Tools\MSVC\14.43.34808\bin\Hostx64\x64\lib.exe /nologo $LINK_FLAGS /out:$TARGET_FILE $in && $POST_BUILD"
   description = Linking CXX static library $TARGET_FILE
   restat = $RESTAT
 

@@ -17,17 +17,17 @@ events:
       - "CMakeLists.txt:12 (project)"
     message: |
       Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
-      Compiler: D:/Visual_Studio_2022/VC/Tools/MSVC/14.43.34618/bin/Hostx64/x64/cl.exe 
+      Compiler: D:/Visual_Studio_2022/VC/Tools/MSVC/14.43.34808/bin/Hostx64/x64/cl.exe 
       Build flags: 
       Id flags:  
       
       The output was:
       0
-      用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.43.34618 版
+      用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.43.34808 版
       版权所有(C) Microsoft Corporation。保留所有权利。
       
       CMakeCCompilerId.c
-      Microsoft (R) Incremental Linker Version 14.43.34618.0
+      Microsoft (R) Incremental Linker Version 14.43.34808.0
       Copyright (C) Microsoft Corporation.  All rights reserved.
       
       /out:CMakeCCompilerId.exe 
@@ -63,17 +63,17 @@ events:
       - "CMakeLists.txt:12 (project)"
     message: |
       Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
-      Compiler: D:/Visual_Studio_2022/VC/Tools/MSVC/14.43.34618/bin/Hostx64/x64/cl.exe 
+      Compiler: D:/Visual_Studio_2022/VC/Tools/MSVC/14.43.34808/bin/Hostx64/x64/cl.exe 
       Build flags: 
       Id flags:  
       
       The output was:
       0
-      用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.43.34618 版
+      用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.43.34808 版
       版权所有(C) Microsoft Corporation。保留所有权利。
       
       CMakeCXXCompilerId.cpp
-      Microsoft (R) Incremental Linker Version 14.43.34618.0
+      Microsoft (R) Incremental Linker Version 14.43.34808.0
       Copyright (C) Microsoft Corporation.  All rights reserved.
       
       /out:CMakeCXXCompilerId.exe 
@@ -109,8 +109,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "D:/MyCode/OpenGLCmakeProject/out/build/x64-debug/CMakeFiles/CMakeScratch/TryCompile-endrsq"
-      binary: "D:/MyCode/OpenGLCmakeProject/out/build/x64-debug/CMakeFiles/CMakeScratch/TryCompile-endrsq"
+      source: "D:/MyCode/OpenGLCmakeProject/out/build/x64-debug/CMakeFiles/CMakeScratch/TryCompile-sb0876"
+      binary: "D:/MyCode/OpenGLCmakeProject/out/build/x64-debug/CMakeFiles/CMakeScratch/TryCompile-sb0876"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_C_FLAGS_DEBUG: "/MDd /Ob0 /Od /RTC1"
@@ -120,11 +120,11 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'D:/MyCode/OpenGLCmakeProject/out/build/x64-debug/CMakeFiles/CMakeScratch/TryCompile-endrsq'
+        Change Dir: 'D:/MyCode/OpenGLCmakeProject/out/build/x64-debug/CMakeFiles/CMakeScratch/TryCompile-sb0876'
         
-        Run Build Command(s): d:\\visual_studio_2022\\common7\\ide\\commonextensions\\microsoft\\cmake\\Ninja\\ninja.exe -v cmTC_52413
-        [1/2] D:\\Visual_Studio_2022\\VC\\Tools\\MSVC\\14.43.34618\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS /W3  /MDd /Ob0 /Od /RTC1 -Zi /showIncludes /FoCMakeFiles\\cmTC_52413.dir\\CMakeCCompilerABI.c.obj /FdCMakeFiles\\cmTC_52413.dir\\ /FS -c D:\\Visual_Studio_2022\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.30\\Modules\\CMakeCCompilerABI.c
-        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && D:\\Visual_Studio_2022\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_52413.dir --rc="D:\\Windows Kits\\10\\bin\\10.0.22621.0\\x64\\rc.exe" --mt="D:\\Windows Kits\\10\\bin\\10.0.22621.0\\x64\\mt.exe" --manifests  -- D:\\Visual_Studio_2022\\VC\\Tools\\MSVC\\14.43.34618\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_52413.dir\\CMakeCCompilerABI.c.obj  /out:cmTC_52413.exe /implib:cmTC_52413.lib /pdb:cmTC_52413.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s): d:\\visual_studio_2022\\common7\\ide\\commonextensions\\microsoft\\cmake\\Ninja\\ninja.exe -v cmTC_74b55
+        [1/2] D:\\Visual_Studio_2022\\VC\\Tools\\MSVC\\14.43.34808\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS /W3  /MDd /Ob0 /Od /RTC1 -Zi /showIncludes /FoCMakeFiles\\cmTC_74b55.dir\\CMakeCCompilerABI.c.obj /FdCMakeFiles\\cmTC_74b55.dir\\ /FS -c D:\\Visual_Studio_2022\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.30\\Modules\\CMakeCCompilerABI.c
+        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && D:\\Visual_Studio_2022\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_74b55.dir --rc="D:\\Windows Kits\\10\\bin\\10.0.22621.0\\x64\\rc.exe" --mt="D:\\Windows Kits\\10\\bin\\10.0.22621.0\\x64\\mt.exe" --manifests  -- D:\\Visual_Studio_2022\\VC\\Tools\\MSVC\\14.43.34808\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_74b55.dir\\CMakeCCompilerABI.c.obj  /out:cmTC_74b55.exe /implib:cmTC_74b55.lib /pdb:cmTC_74b55.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
         
       exitCode: 0
   -
@@ -137,7 +137,7 @@ events:
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
-        linker tool for 'C': D:/Visual_Studio_2022/VC/Tools/MSVC/14.43.34618/bin/Hostx64/x64/link.exe
+        linker tool for 'C': D:/Visual_Studio_2022/VC/Tools/MSVC/14.43.34808/bin/Hostx64/x64/link.exe
         implicit libs: []
         implicit objs: []
         implicit dirs: []
@@ -152,8 +152,8 @@ events:
       - "D:/Visual_Studio_2022/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:12 (project)"
     message: |
-      Running the C compiler's linker: "D:/Visual_Studio_2022/VC/Tools/MSVC/14.43.34618/bin/Hostx64/x64/link.exe" "-v"
-      Microsoft (R) Incremental Linker Version 14.43.34618.0
+      Running the C compiler's linker: "D:/Visual_Studio_2022/VC/Tools/MSVC/14.43.34808/bin/Hostx64/x64/link.exe" "-v"
+      Microsoft (R) Incremental Linker Version 14.43.34808.0
       Copyright (C) Microsoft Corporation.  All rights reserved.
   -
     kind: "try_compile-v1"
@@ -164,8 +164,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "D:/MyCode/OpenGLCmakeProject/out/build/x64-debug/CMakeFiles/CMakeScratch/TryCompile-py3hwf"
-      binary: "D:/MyCode/OpenGLCmakeProject/out/build/x64-debug/CMakeFiles/CMakeScratch/TryCompile-py3hwf"
+      source: "D:/MyCode/OpenGLCmakeProject/out/build/x64-debug/CMakeFiles/CMakeScratch/TryCompile-cat2dn"
+      binary: "D:/MyCode/OpenGLCmakeProject/out/build/x64-debug/CMakeFiles/CMakeScratch/TryCompile-cat2dn"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/MDd /Ob0 /Od /RTC1"
@@ -176,11 +176,11 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'D:/MyCode/OpenGLCmakeProject/out/build/x64-debug/CMakeFiles/CMakeScratch/TryCompile-py3hwf'
+        Change Dir: 'D:/MyCode/OpenGLCmakeProject/out/build/x64-debug/CMakeFiles/CMakeScratch/TryCompile-cat2dn'
         
-        Run Build Command(s): d:\\visual_studio_2022\\common7\\ide\\commonextensions\\microsoft\\cmake\\Ninja\\ninja.exe -v cmTC_0885e
-        [1/2] D:\\Visual_Studio_2022\\VC\\Tools\\MSVC\\14.43.34618\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Ob0 /Od /RTC1 -Zi /showIncludes /FoCMakeFiles\\cmTC_0885e.dir\\CMakeCXXCompilerABI.cpp.obj /FdCMakeFiles\\cmTC_0885e.dir\\ /FS -c D:\\Visual_Studio_2022\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.30\\Modules\\CMakeCXXCompilerABI.cpp
-        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && D:\\Visual_Studio_2022\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_0885e.dir --rc="D:\\Windows Kits\\10\\bin\\10.0.22621.0\\x64\\rc.exe" --mt="D:\\Windows Kits\\10\\bin\\10.0.22621.0\\x64\\mt.exe" --manifests  -- D:\\Visual_Studio_2022\\VC\\Tools\\MSVC\\14.43.34618\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_0885e.dir\\CMakeCXXCompilerABI.cpp.obj  /out:cmTC_0885e.exe /implib:cmTC_0885e.lib /pdb:cmTC_0885e.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s): d:\\visual_studio_2022\\common7\\ide\\commonextensions\\microsoft\\cmake\\Ninja\\ninja.exe -v cmTC_7f626
+        [1/2] D:\\Visual_Studio_2022\\VC\\Tools\\MSVC\\14.43.34808\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Ob0 /Od /RTC1 -Zi /showIncludes /FoCMakeFiles\\cmTC_7f626.dir\\CMakeCXXCompilerABI.cpp.obj /FdCMakeFiles\\cmTC_7f626.dir\\ /FS -c D:\\Visual_Studio_2022\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.30\\Modules\\CMakeCXXCompilerABI.cpp
+        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && D:\\Visual_Studio_2022\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_7f626.dir --rc="D:\\Windows Kits\\10\\bin\\10.0.22621.0\\x64\\rc.exe" --mt="D:\\Windows Kits\\10\\bin\\10.0.22621.0\\x64\\mt.exe" --manifests  -- D:\\Visual_Studio_2022\\VC\\Tools\\MSVC\\14.43.34808\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_7f626.dir\\CMakeCXXCompilerABI.cpp.obj  /out:cmTC_7f626.exe /implib:cmTC_7f626.lib /pdb:cmTC_7f626.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
         
       exitCode: 0
   -
@@ -193,7 +193,7 @@ events:
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
-        linker tool for 'CXX': D:/Visual_Studio_2022/VC/Tools/MSVC/14.43.34618/bin/Hostx64/x64/link.exe
+        linker tool for 'CXX': D:/Visual_Studio_2022/VC/Tools/MSVC/14.43.34808/bin/Hostx64/x64/link.exe
         implicit libs: []
         implicit objs: []
         implicit dirs: []
@@ -208,7 +208,7 @@ events:
       - "D:/Visual_Studio_2022/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:12 (project)"
     message: |
-      Running the CXX compiler's linker: "D:/Visual_Studio_2022/VC/Tools/MSVC/14.43.34618/bin/Hostx64/x64/link.exe" "-v"
-      Microsoft (R) Incremental Linker Version 14.43.34618.0
+      Running the CXX compiler's linker: "D:/Visual_Studio_2022/VC/Tools/MSVC/14.43.34808/bin/Hostx64/x64/link.exe" "-v"
+      Microsoft (R) Incremental Linker Version 14.43.34808.0
       Copyright (C) Microsoft Corporation.  All rights reserved.
 ...

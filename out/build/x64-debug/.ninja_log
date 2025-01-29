@@ -1,12 +1,13 @@
 # ninja log v6
-225	1028	7596635841650358	CMakeFiles/OpenGLCmakeProject.dir/src/glad.c.obj	604a7a27ccfd5fc0
-39	1188	7597574074592263	glframework/CMakeFiles/GLFramework.dir/shaer.cpp.obj	bf73e57f347692f5
-69	1339	7596635840090934	application/CMakeFiles/app.dir/Application.cpp.obj	52afe3b093b99567
-9	1288	7596635839496106	wrapper/CMakeFiles/wrapper.dir/checkError.cpp.obj	36734a7350b9fb3c
-1339	1584	7596635852792607	application/app.lib	69bcbad721490899
-1289	1533	7596635852282533	wrapper/wrapper.lib	50ec1ecda0b03e04
-1189	1425	7597574086081833	glframework/GLFramework.lib	51edb36a0d32a00f
-23	1040	7597644408155695	CMakeFiles/OpenGLCmakeProject.dir/src/OpenGLCmakeProject.cpp.obj	972b16f44e072985
-1041	1639	7597644418333578	OpenGLCmakeProject.exe	758a39a777053f7a
-23	813	7597645599180175	CMakeFiles/OpenGLCmakeProject.dir/src/OpenGLCmakeProject.cpp.obj	972b16f44e072985
-813	1350	7597645607085054	OpenGLCmakeProject.exe	758a39a777053f7a
+38	318	7598352296633673	glframework/CMakeFiles/GLFramework.dir/texture.cpp.obj	5a5d85853b735dec
+286	1018	7598351780866734	CMakeFiles/OpenGLCmakeProject.dir/src/glad.c.obj	dbd668ef08fd4aa5
+70	1416	7598351778703797	application/CMakeFiles/app.dir/Application.cpp.obj	eb8b5f0eb5333bb5
+125	1426	7598351779259192	glframework/CMakeFiles/GLFramework.dir/shaer.cpp.obj	9b561e8744110d60
+9	1366	7598351778088614	wrapper/CMakeFiles/wrapper.dir/checkError.cpp.obj	5829da8bc1939435
+231	1465	7598351780311451	CMakeFiles/OpenGLCmakeProject.dir/src/OpenGLCmakeProject.cpp.obj	f6262f06f1b071c6
+1367	1750	7598351791675811	wrapper/wrapper.lib	400a838c127ce71b
+319	471	7598352299444552	glframework/GLFramework.lib	7a7081153ba8a838
+1417	1796	7598351792171319	application/app.lib	9c3b3e288beea84f
+471	895	7598352300965277	OpenGLCmakeProject.exe	bbbebf1397644e1b
+34	761	7598355228551484	CMakeFiles/OpenGLCmakeProject.dir/src/OpenGLCmakeProject.cpp.obj	f6262f06f1b071c6
+761	1175	7598355235825947	OpenGLCmakeProject.exe	bbbebf1397644e1b

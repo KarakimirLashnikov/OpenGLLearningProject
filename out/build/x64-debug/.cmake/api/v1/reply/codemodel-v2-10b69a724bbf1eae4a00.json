@@ -1,0 +1,138 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3
+					],
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "wrapper",
+					"jsonFile" : "directory-wrapper-Debug-230ceb64303127ee682a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "wrapper",
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"build" : "application",
+					"jsonFile" : "directory-application-Debug-42f45a6354a6cfac8278.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "application",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "glframework",
+					"jsonFile" : "directory-glframework-Debug-03d90da69caf02abf969.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "glframework",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					],
+					"name" : "OpenGLCmakeProject",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 3,
+					"id" : "GLFramework::@60be4de9c07dfc5bbca6",
+					"jsonFile" : "target-GLFramework-Debug-e98a793078d32eb9893b.json",
+					"name" : "GLFramework",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "OpenGLCmakeProject::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-OpenGLCmakeProject-Debug-53c2631cbc35291b7d2a.json",
+					"name" : "OpenGLCmakeProject",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "app::@8badf0d542dc2e21c899",
+					"jsonFile" : "target-app-Debug-acd6a0da67712bf62008.json",
+					"name" : "app",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "wrapper::@cfb3dd9ac32c2b8e43a8",
+					"jsonFile" : "target-wrapper-Debug-f76e089c36df85e2d5b3.json",
+					"name" : "wrapper",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/MyCode/OpenGLCmakeProject/out/build/x64-debug",
+		"source" : "D:/MyCode/OpenGLCmakeProject"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 8
+	}
+}

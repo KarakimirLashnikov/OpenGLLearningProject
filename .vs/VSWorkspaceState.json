@@ -14,10 +14,9 @@
   "ExpandedNodes": [
     "",
     "\\assets",
-    "\\assets\\textures",
-    "\\dependency",
-    "\\dependency\\include"
+    "\\assets\\shaders",
+    "\\glframework"
   ],
-  "SelectedNode": "\\dependency",
+  "SelectedNode": "\\CMakeLists.txt",
   "PreviewInSolutionExplorer": false
 }
