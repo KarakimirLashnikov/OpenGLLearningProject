@@ -13,10 +13,10 @@
   },
   "ExpandedNodes": [
     "",
-    "\\assets",
     "\\assets\\shaders",
-    "\\glframework"
+    "\\glframework",
+    "\\src"
   ],
-  "SelectedNode": "\\CMakeLists.txt",
+  "SelectedNode": "\\glframework\\shader.hpp",
   "PreviewInSolutionExplorer": false
 }

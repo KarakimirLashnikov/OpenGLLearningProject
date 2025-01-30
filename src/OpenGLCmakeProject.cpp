@@ -2,12 +2,14 @@
 
 Shader_ptr shader{ nullptr };
 Texture_ptr texture{ nullptr };
+glm::mat4 t{ 1.0f };
 GLuint vao[1]{}, vbo[1]{}, ebo[1]{}, uvvbo[1]{};
 
 void prepareData();
 void prepareShader();
 void render();
 void prepareTexture();
+void doTransformations(float);
 
 int main()
 {
@@ -17,7 +19,6 @@ int main()
         return -1;
     }
     // Prepare the data and shader
-    prepareTexture();
     prepareData();
     prepareShader();
     // Set the clear color
@@ -85,13 +86,6 @@ void prepareData()
         0.5f, 0.5f, 0.0f,      0.5f, 0.5f, 0.5f
     };
 
-    GLfloat uv[]{
-        0.0f, 0.0f,
-        1.0f, 0.0f,
-        0.0f, 1.0f,
-        1.0f, 1.0f
-    };
-
     GLuint indices[]{
         0, 1, 2,
         2, 1, 3
@@ -110,10 +104,6 @@ void prepareData()
         1, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(GLfloat), (void*)(3 * sizeof(GLfloat))));
     GLCALL(glEnableVertexAttribArray(0));
     GLCALL(glEnableVertexAttribArray(1));
-    GLCALL(glBindBuffer(GL_ARRAY_BUFFER, uvvbo[0]));
-    GLCALL(glBufferData(GL_ARRAY_BUFFER, sizeof(uv), uv, GL_STATIC_DRAW));
-    GLCALL(glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, 2 * sizeof(GLfloat), (void*)(0)));
-    GLCALL(glEnableVertexAttribArray(2));
     GLCALL(glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, ebo[0]));
     GLCALL(glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices, GL_STATIC_DRAW));
     GLCALL(glBindVertexArray(0));
@@ -134,7 +124,8 @@ void render()
     shader->begin();
     // Draw the object
     float var = glfwGetTime();
-    shader->setUniform<float>("time", var); // update the uniform
+    doTransformations(var);
+    shader->setUniform<glm::mat4>("transform", ::t);
     GLCALL(glBindVertexArray(vao[0]));
     GLCALL(glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, nullptr));
     // Unbind the shader program
@@ -148,4 +139,11 @@ void prepareTexture()
     texture = std::make_shared<Texture>(
         "assets/textures/girl.jpg"
     );
+}
+
+void doTransformations(float dt)
+{
+    float speed = 0.05f;
+    ::t = glm::translate(::t, glm::vec3(0.001f, 0.0f, 0.0f));
+    ::t = glm::rotate(::t, glm::radians(speed), glm::vec3(0.0f, 0.0f, 1.0f));
 }

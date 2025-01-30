@@ -8,18 +8,16 @@
 #include <string_view>
 #include <concepts>
 #include <cassert>
+#include <type_traits>
 
 // concept : Supported uniform variable type
 template <typename T>
 concept UniformVariableType = (
     std::same_as<T, float> ||
     std::same_as<T, int> ||
-    std::same_as<T, bool>
+    std::same_as<T, bool> ||
+    std::same_as<T, glm::mat4>
     );
-
-// concept : every element type should be the same
-template <typename T, typename... Args>
-concept SameType = (... && std::same_as<T, Args>);
 
 class Shader
 {
@@ -33,6 +31,8 @@ private:
 private:
     template <size_t N, typename T, typename... Args>
     void setUniform_impl(const std::string_view name, Args... args) const;
+    template <typename T, typename... Args>
+    void setUniform_impl(const std::string_view name, Args&&... args) const;
 public:
     Shader(const char* vertexPath, const char* fragmentPath);
     ~Shader() noexcept;
@@ -54,7 +54,14 @@ public:
 // never call this function
 template<size_t N, typename T, typename ...Args>
 inline void Shader::setUniform_impl(
-    const std::string_view name, Args ...args) const
+    const std::string_view name, Args...args) const
+{
+    std::cerr << "Should not be here!\n";
+    assert(false);
+}
+
+template<typename T, typename ...Args>
+inline void Shader::setUniform_impl(const std::string_view name, Args && ...args) const
 {
     std::cerr << "Should not be here!\n";
     assert(false);
@@ -71,12 +78,12 @@ void Shader::setUniform(
         UniformVariableType<T>,
         "Unsupported uniform variable type"
         );
-    static_assert(
-        SameType<T, Args...>,
-        "All arguments must be of the same type"
-        );
-
-    setUniform_impl<N, T, Args...>(name, args...);
+    if constexpr (std::is_trivially_copyable_v<T>) {
+        setUniform_impl<N, T>(name, args...);
+    }
+    else {
+        setUniform_impl<N, T>(name, std::move<T>(args)...);
+    }
 }
 
 template <>
@@ -177,4 +184,13 @@ inline void Shader::setUniform_impl<4, bool>(
 {
     GLint location{ glGetUniformLocation(this->m_program, name.data()) };
     GLCALL(glUniform4i(location, v1, v2, v3, v4));
+}
+
+template <>
+inline void Shader::setUniform_impl<1, glm::mat4>(
+    const std::string_view name, glm::mat4 value) const
+{
+    GLint location{ glGetUniformLocation(this->m_program, name.data()) };
+    // glm and opengl use column-major order
+    GLCALL(glUniformMatrix4fv(location, 1, GL_FALSE, glm::value_ptr(value)));
 }
