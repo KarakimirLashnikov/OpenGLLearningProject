@@ -32,43 +32,78 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 35,
+				"line" : 37,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 26,
+				"line" : 28,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 42,
+				"line" : 44,
 				"parent" : 0
 			},
 			{
 				"command" : 3,
 				"file" : 0,
-				"line" : 15,
+				"line" : 17,
 				"parent" : 0
 			},
 			{
 				"command" : 4,
 				"file" : 0,
-				"line" : 17,
+				"line" : 19,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 0,
-				"line" : 53,
+				"line" : 62,
 				"parent" : 0
 			}
 		]
 	},
 	"compileGroups" : 
 	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "/DWIN32 /D_WINDOWS /W3 /MDd /Ob0 /Od /RTC1 -ZI"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 4,
+					"define" : "DEBUG"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 5,
+					"path" : "D:/MyCode/OpenGLCmakeProject"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "D:/MyCode/OpenGLCmakeProject/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "D:/MyCode/OpenGLCmakeProject/dependency/include"
+				}
+			],
+			"language" : "C",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
 		{
 			"compileCommandFragments" : 
 			[
@@ -107,41 +142,6 @@
 				],
 				"standard" : "20"
 			},
-			"sourceIndexes" : 
-			[
-				0
-			]
-		},
-		{
-			"compileCommandFragments" : 
-			[
-				{
-					"fragment" : "/DWIN32 /D_WINDOWS /W3 /MDd /Ob0 /Od /RTC1 -ZI"
-				}
-			],
-			"defines" : 
-			[
-				{
-					"backtrace" : 4,
-					"define" : "DEBUG"
-				}
-			],
-			"includes" : 
-			[
-				{
-					"backtrace" : 5,
-					"path" : "D:/MyCode/OpenGLCmakeProject"
-				},
-				{
-					"backtrace" : 5,
-					"path" : "D:/MyCode/OpenGLCmakeProject/include"
-				},
-				{
-					"backtrace" : 5,
-					"path" : "D:/MyCode/OpenGLCmakeProject/dependency/include"
-				}
-			],
-			"language" : "C",
 			"sourceIndexes" : 
 			[
 				1
@@ -246,13 +246,13 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "src/OpenGLCmakeProject.cpp",
+			"path" : "src/glad.c",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 1,
-			"path" : "src/glad.c",
+			"path" : "src/main.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

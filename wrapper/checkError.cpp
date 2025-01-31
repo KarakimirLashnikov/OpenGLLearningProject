@@ -10,7 +10,6 @@ void checkError()
     if (errorCode != GL_NO_ERROR)
     {
         std::string error{};
-
         switch (errorCode)
         {
         case GL_INVALID_ENUM:

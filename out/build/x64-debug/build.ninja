@@ -49,18 +49,18 @@ cmake_ninja_workdir = D$:\MyCode\OpenGLCmakeProject\out\build\x64-debug\
 
 build cmake_object_order_depends_target_OpenGLCmakeProject: phony || cmake_object_order_depends_target_GLFramework cmake_object_order_depends_target_app cmake_object_order_depends_target_wrapper
 
-build CMakeFiles\OpenGLCmakeProject.dir\src\OpenGLCmakeProject.cpp.obj: CXX_COMPILER__OpenGLCmakeProject_unscanned_Debug D$:\MyCode\OpenGLCmakeProject\src\OpenGLCmakeProject.cpp || cmake_object_order_depends_target_OpenGLCmakeProject
+build CMakeFiles\OpenGLCmakeProject.dir\src\glad.c.obj: C_COMPILER__OpenGLCmakeProject_unscanned_Debug D$:\MyCode\OpenGLCmakeProject\src\glad.c || cmake_object_order_depends_target_OpenGLCmakeProject
   DEFINES = -DDEBUG
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++20 -ZI
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Ob0 /Od /RTC1 -ZI
   INCLUDES = -ID:\MyCode\OpenGLCmakeProject -ID:\MyCode\OpenGLCmakeProject\include -ID:\MyCode\OpenGLCmakeProject\dependency\include
   OBJECT_DIR = CMakeFiles\OpenGLCmakeProject.dir
   OBJECT_FILE_DIR = CMakeFiles\OpenGLCmakeProject.dir\src
   TARGET_COMPILE_PDB = CMakeFiles\OpenGLCmakeProject.dir\
   TARGET_PDB = OpenGLCmakeProject.pdb
 
-build CMakeFiles\OpenGLCmakeProject.dir\src\glad.c.obj: C_COMPILER__OpenGLCmakeProject_unscanned_Debug D$:\MyCode\OpenGLCmakeProject\src\glad.c || cmake_object_order_depends_target_OpenGLCmakeProject
+build CMakeFiles\OpenGLCmakeProject.dir\src\main.cpp.obj: CXX_COMPILER__OpenGLCmakeProject_unscanned_Debug D$:\MyCode\OpenGLCmakeProject\src\main.cpp || cmake_object_order_depends_target_OpenGLCmakeProject
   DEFINES = -DDEBUG
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Ob0 /Od /RTC1 -ZI
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++20 -ZI
   INCLUDES = -ID:\MyCode\OpenGLCmakeProject -ID:\MyCode\OpenGLCmakeProject\include -ID:\MyCode\OpenGLCmakeProject\dependency\include
   OBJECT_DIR = CMakeFiles\OpenGLCmakeProject.dir
   OBJECT_FILE_DIR = CMakeFiles\OpenGLCmakeProject.dir\src
@@ -75,7 +75,7 @@ build CMakeFiles\OpenGLCmakeProject.dir\src\glad.c.obj: C_COMPILER__OpenGLCmakeP
 #############################################
 # Link the executable OpenGLCmakeProject.exe
 
-build OpenGLCmakeProject.exe: CXX_EXECUTABLE_LINKER__OpenGLCmakeProject_Debug CMakeFiles\OpenGLCmakeProject.dir\src\OpenGLCmakeProject.cpp.obj CMakeFiles\OpenGLCmakeProject.dir\src\glad.c.obj | wrapper\wrapper.lib application\app.lib glframework\GLFramework.lib || application\app.lib glframework\GLFramework.lib wrapper\wrapper.lib
+build OpenGLCmakeProject.exe: CXX_EXECUTABLE_LINKER__OpenGLCmakeProject_Debug CMakeFiles\OpenGLCmakeProject.dir\src\glad.c.obj CMakeFiles\OpenGLCmakeProject.dir\src\main.cpp.obj | wrapper\wrapper.lib application\app.lib glframework\GLFramework.lib || application\app.lib glframework\GLFramework.lib wrapper\wrapper.lib
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -ZI
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
   LINK_LIBRARIES = opengl32.lib  glfw3.lib  soil2-debug.lib  wrapper\wrapper.lib  application\app.lib  glframework\GLFramework.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
@@ -127,7 +127,7 @@ build cmake_object_order_depends_target_wrapper: phony || .
 
 build wrapper\CMakeFiles\wrapper.dir\checkError.cpp.obj: CXX_COMPILER__wrapper_unscanned_Debug D$:\MyCode\OpenGLCmakeProject\wrapper\checkError.cpp || cmake_object_order_depends_target_wrapper
   DEFINES = -DDEBUG
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++20 -ZI
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++latest -ZI
   INCLUDES = -ID:\MyCode\OpenGLCmakeProject -ID:\MyCode\OpenGLCmakeProject\include -ID:\MyCode\OpenGLCmakeProject\dependency\include
   OBJECT_DIR = wrapper\CMakeFiles\wrapper.dir
   OBJECT_FILE_DIR = wrapper\CMakeFiles\wrapper.dir
@@ -191,10 +191,55 @@ build cmake_object_order_depends_target_app: phony || .
 
 build application\CMakeFiles\app.dir\Application.cpp.obj: CXX_COMPILER__app_unscanned_Debug D$:\MyCode\OpenGLCmakeProject\application\Application.cpp || cmake_object_order_depends_target_app
   DEFINES = -DDEBUG
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++20 -ZI
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++latest -ZI
   INCLUDES = -ID:\MyCode\OpenGLCmakeProject -ID:\MyCode\OpenGLCmakeProject\include -ID:\MyCode\OpenGLCmakeProject\dependency\include
   OBJECT_DIR = application\CMakeFiles\app.dir
   OBJECT_FILE_DIR = application\CMakeFiles\app.dir
+  TARGET_COMPILE_PDB = application\CMakeFiles\app.dir\app.pdb
+  TARGET_PDB = application\app.pdb
+
+build application\CMakeFiles\app.dir\camera\Camera.cpp.obj: CXX_COMPILER__app_unscanned_Debug D$:\MyCode\OpenGLCmakeProject\application\camera\Camera.cpp || cmake_object_order_depends_target_app
+  DEFINES = -DDEBUG
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++latest -ZI
+  INCLUDES = -ID:\MyCode\OpenGLCmakeProject -ID:\MyCode\OpenGLCmakeProject\include -ID:\MyCode\OpenGLCmakeProject\dependency\include
+  OBJECT_DIR = application\CMakeFiles\app.dir
+  OBJECT_FILE_DIR = application\CMakeFiles\app.dir\camera
+  TARGET_COMPILE_PDB = application\CMakeFiles\app.dir\app.pdb
+  TARGET_PDB = application\app.pdb
+
+build application\CMakeFiles\app.dir\camera\GameCameraControl.cpp.obj: CXX_COMPILER__app_unscanned_Debug D$:\MyCode\OpenGLCmakeProject\application\camera\GameCameraControl.cpp || cmake_object_order_depends_target_app
+  DEFINES = -DDEBUG
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++latest -ZI
+  INCLUDES = -ID:\MyCode\OpenGLCmakeProject -ID:\MyCode\OpenGLCmakeProject\include -ID:\MyCode\OpenGLCmakeProject\dependency\include
+  OBJECT_DIR = application\CMakeFiles\app.dir
+  OBJECT_FILE_DIR = application\CMakeFiles\app.dir\camera
+  TARGET_COMPILE_PDB = application\CMakeFiles\app.dir\app.pdb
+  TARGET_PDB = application\app.pdb
+
+build application\CMakeFiles\app.dir\camera\OthographicCamera.cpp.obj: CXX_COMPILER__app_unscanned_Debug D$:\MyCode\OpenGLCmakeProject\application\camera\OthographicCamera.cpp || cmake_object_order_depends_target_app
+  DEFINES = -DDEBUG
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++latest -ZI
+  INCLUDES = -ID:\MyCode\OpenGLCmakeProject -ID:\MyCode\OpenGLCmakeProject\include -ID:\MyCode\OpenGLCmakeProject\dependency\include
+  OBJECT_DIR = application\CMakeFiles\app.dir
+  OBJECT_FILE_DIR = application\CMakeFiles\app.dir\camera
+  TARGET_COMPILE_PDB = application\CMakeFiles\app.dir\app.pdb
+  TARGET_PDB = application\app.pdb
+
+build application\CMakeFiles\app.dir\camera\PerspectiveCamera.cpp.obj: CXX_COMPILER__app_unscanned_Debug D$:\MyCode\OpenGLCmakeProject\application\camera\PerspectiveCamera.cpp || cmake_object_order_depends_target_app
+  DEFINES = -DDEBUG
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++latest -ZI
+  INCLUDES = -ID:\MyCode\OpenGLCmakeProject -ID:\MyCode\OpenGLCmakeProject\include -ID:\MyCode\OpenGLCmakeProject\dependency\include
+  OBJECT_DIR = application\CMakeFiles\app.dir
+  OBJECT_FILE_DIR = application\CMakeFiles\app.dir\camera
+  TARGET_COMPILE_PDB = application\CMakeFiles\app.dir\app.pdb
+  TARGET_PDB = application\app.pdb
+
+build application\CMakeFiles\app.dir\camera\TrackBallControl.cpp.obj: CXX_COMPILER__app_unscanned_Debug D$:\MyCode\OpenGLCmakeProject\application\camera\TrackBallControl.cpp || cmake_object_order_depends_target_app
+  DEFINES = -DDEBUG
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++latest -ZI
+  INCLUDES = -ID:\MyCode\OpenGLCmakeProject -ID:\MyCode\OpenGLCmakeProject\include -ID:\MyCode\OpenGLCmakeProject\dependency\include
+  OBJECT_DIR = application\CMakeFiles\app.dir
+  OBJECT_FILE_DIR = application\CMakeFiles\app.dir\camera
   TARGET_COMPILE_PDB = application\CMakeFiles\app.dir\app.pdb
   TARGET_PDB = application\app.pdb
 
@@ -206,7 +251,7 @@ build application\CMakeFiles\app.dir\Application.cpp.obj: CXX_COMPILER__app_unsc
 #############################################
 # Link the static library application\app.lib
 
-build application\app.lib: CXX_STATIC_LIBRARY_LINKER__app_Debug application\CMakeFiles\app.dir\Application.cpp.obj
+build application\app.lib: CXX_STATIC_LIBRARY_LINKER__app_Debug application\CMakeFiles\app.dir\Application.cpp.obj application\CMakeFiles\app.dir\camera\Camera.cpp.obj application\CMakeFiles\app.dir\camera\GameCameraControl.cpp.obj application\CMakeFiles\app.dir\camera\OthographicCamera.cpp.obj application\CMakeFiles\app.dir\camera\PerspectiveCamera.cpp.obj application\CMakeFiles\app.dir\camera\TrackBallControl.cpp.obj
   LANGUAGE_COMPILE_FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -ZI
   LINK_FLAGS = /machine:x64
   OBJECT_DIR = application\CMakeFiles\app.dir
@@ -255,7 +300,7 @@ build cmake_object_order_depends_target_GLFramework: phony || .
 
 build glframework\CMakeFiles\GLFramework.dir\shaer.cpp.obj: CXX_COMPILER__GLFramework_unscanned_Debug D$:\MyCode\OpenGLCmakeProject\glframework\shaer.cpp || cmake_object_order_depends_target_GLFramework
   DEFINES = -DDEBUG
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++20 -ZI
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++latest -ZI
   INCLUDES = -ID:\MyCode\OpenGLCmakeProject -ID:\MyCode\OpenGLCmakeProject\include -ID:\MyCode\OpenGLCmakeProject\dependency\include
   OBJECT_DIR = glframework\CMakeFiles\GLFramework.dir
   OBJECT_FILE_DIR = glframework\CMakeFiles\GLFramework.dir
@@ -264,7 +309,7 @@ build glframework\CMakeFiles\GLFramework.dir\shaer.cpp.obj: CXX_COMPILER__GLFram
 
 build glframework\CMakeFiles\GLFramework.dir\texture.cpp.obj: CXX_COMPILER__GLFramework_unscanned_Debug D$:\MyCode\OpenGLCmakeProject\glframework\texture.cpp || cmake_object_order_depends_target_GLFramework
   DEFINES = -DDEBUG
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++20 -ZI
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++latest -ZI
   INCLUDES = -ID:\MyCode\OpenGLCmakeProject -ID:\MyCode\OpenGLCmakeProject\include -ID:\MyCode\OpenGLCmakeProject\dependency\include
   OBJECT_DIR = glframework\CMakeFiles\GLFramework.dir
   OBJECT_FILE_DIR = glframework\CMakeFiles\GLFramework.dir

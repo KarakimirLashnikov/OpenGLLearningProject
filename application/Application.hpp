@@ -3,12 +3,34 @@
 #include "glframework/core.h"
 #include "wrapper/checkError.hpp"
 #include <iostream>
+#include <vector>
+#include <variant>
+#include <functional>
+#include <concepts>
 #include <cassert>
 
 struct GLFWwindow;
 
-using ResizeCallback = void(*)(int, int);
-using KeyPressCallback = void(*)(int, int, int, int);
+template <typename T, typename... Args>
+concept Callable = requires(T t, Args... args) {
+    { t(args...) } -> std::same_as<void>;
+};
+
+enum SignalType {
+    Resize = 0,  // must start from 0, window resize signal
+    KeyPress,  // key press signal
+    MouseClick,  // mouse button click signal
+    CursorPos,  // mouse cursor move signal
+    MouseScroll,   // mouse scroll signal
+    SignalCount  // must be last 
+};
+union SignalCallback {
+    void (*resizeCallback)(int, int);
+    void (*keyPressedCallback)(int, int, int, int);
+    void (*mouseClickCallback)(int, int, int);
+    void (*cursorPosCallback)(double, double);
+    void (*mouseScrollCallback)(double, double);
+};
 
 class Application
 {
@@ -23,19 +45,23 @@ private:
     static Application* s_Instance;
     static std::mutex s_InstanceMutex;
 
+    static void registrationCallback(GLFWwindow* window);
     static void framebufferResizeCallback(
         GLFWwindow* window, int width, int height);
     static void keyPressedCallback(
         GLFWwindow* window, int key, int scancode, int action, int mods);
+    static void mousClickCallback(
+        GLFWwindow* window, int button, int action, int mods);
+    static void cursorPosCallback(
+        GLFWwindow* window, double xpos, double ypos);
+    static void mouseScrollCallback(
+        GLFWwindow* window, double xoffset, double yoffset);
 
-private: // member variables
     uint32_t m_WindowWidth{};
     uint32_t m_WindowHeight{};
     GLFWwindow* m_WindowHandle{};
 
-private: // member functions
-    ResizeCallback m_ResizeCallback;
-    KeyPressCallback m_KeyPressCallback;
+    std::vector<SignalCallback> m_Signals;
 
 public:
     static Application* GetInstance();
@@ -48,10 +74,9 @@ public: // member functions
     uint32_t GetWindowHeight() const;
 
     // Set
-    void SetWindowWidth(uint32_t width);
-    void SetWindowHeight(uint32_t height);
-    void SetResizeCallback(ResizeCallback callback);
-    void SetKeyPressCallback(KeyPressCallback callback);
+    void SetCallbacks(SignalType type, void* callback);
+
+    void SetWindowSize(uint32_t width, uint32_t height);
 
     // logic
     bool Initialize(uint32_t width, uint32_t height, const char* title);

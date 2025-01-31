@@ -9,12 +9,14 @@
 #include "application/Application.hpp"
 #include "glframework/Shader.hpp"
 #include "glframework/texture.hpp"
+#include "application/camera/PerspectiveCamera.hpp"
+#include "application/camera/TrackBallControl.hpp"
 
 #define STB_IMAGE_IMPLEMENTATION
 // cpp library
 #include <memory>
 using Shader_ptr = std::shared_ptr<Shader>;
-using Texture_ptr = std::shared_ptr<Texture>;
+using Camera_ptr = std::unique_ptr<PerspectiveCamera>;
 
 // const variable
 constexpr int WindowWidth{ 1280 };

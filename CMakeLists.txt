@@ -10,7 +10,9 @@ if (POLICY CMP0141)
 endif()
 # 
 project ("OpenGLCmakeProject")
-set (CMAKE_CXX_STANDARD 20)
+set (CMAKE_CXX_STANDARD 23)
+set (CMAKE_CXX_STANDARD_REQUIRED ON)
+set (CMAKE_CXX_EXTENSIONS OFF)
 
 add_definitions(-DDEBUG)
 # 查找目录
@@ -34,9 +36,9 @@ add_subdirectory(glframework)
 # 将源代码添加到此项目的可执行文件。
 add_executable (
 	OpenGLCmakeProject 
-	"src/OpenGLCmakeProject.cpp" 
+	 
 	"src/glad.c"
-)
+  "src/main.cpp")
 
 # 链接库
 target_link_libraries(
@@ -47,6 +49,13 @@ target_link_libraries(
 	wrapper
 	app
 	GLFramework
+)
+
+set_target_properties(
+	OpenGLCmakeProject PROPERTIES
+	CMAKE_CXX_STANDARD 23
+	CMAKE_CXX_STANDARD_REQUIRED ON
+	CMAKE_CXX_EXTENSIONS OFF
 )
 
 if (CMAKE_VERSION VERSION_GREATER 3.12)
