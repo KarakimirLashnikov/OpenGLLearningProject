@@ -16,5 +16,5 @@ public:
     virtual void pitch(float angle) override;
     virtual void yaw(float angle) override;
 private:
-    float m_speed{};
+    float m_zoomFactor{ 1.0f };
 };

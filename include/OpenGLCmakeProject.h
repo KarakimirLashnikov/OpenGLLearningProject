@@ -10,7 +10,7 @@
 #include "glframework/Shader.hpp"
 #include "glframework/texture.hpp"
 #include "application/camera/PerspectiveCamera.hpp"
-#include "application/camera/TrackBallControl.hpp"
+#include "application/camera/GameCameraControl.hpp"
 
 #define STB_IMAGE_IMPLEMENTATION
 // cpp library

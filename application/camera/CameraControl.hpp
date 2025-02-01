@@ -15,7 +15,7 @@ protected:
     double m_currentX{},
         m_currentY{};
 
-    float m_senesitivity{ 0.02f };
+    float m_senesitivity{ 0.005f };
 
     Camera_Ptr m_camera;
     std::unordered_map<int, bool> m_keyMap;
