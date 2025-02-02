@@ -36,9 +36,9 @@ add_subdirectory(glframework)
 # 将源代码添加到此项目的可执行文件。
 add_executable (
 	OpenGLCmakeProject 
-	 
 	"src/glad.c"
-  "src/main.cpp")
+	"src/main.cpp"
+)
 
 # 链接库
 target_link_libraries(

@@ -1,114 +1,109 @@
 #include "GameCameraControl.hpp"
 #include <iostream>
-inline constexpr float PI{ 3.14159265359f };
 
-GameCameraControl::GameCameraControl(Camera_Ptr camera)
-    : CameraControl(std::move(camera), {})
+GameCameraControl::GameCameraControl(Camera_Ptr camera, std::unordered_map<int, bool> keyMap)
+    : CameraControl(camera, keyMap)
 {
 }
 
-void GameCameraControl::onMouse(int button, int action, double x, double y)
+void GameCameraControl::onMouse(int button, int action, float x, float y)
 {
-    if (button == GLFW_MOUSE_BUTTON_LEFT)
-    {
-        if (action == GLFW_RELEASE) {
-            this->m_leftMouseDown = false;
-            return;
-        }
-        else if (action == GLFW_PRESS) {
-            this->m_leftMouseDown = true;
-            this->m_currentX = x;
-            this->m_currentY = y;
-            return;
-        }
+    if (button == GLFW_MOUSE_BUTTON_LEFT && action == GLFW_PRESS) {
+        m_leftMouseDown = true;
+        return;
     }
-
-    if (this->m_leftMouseDown)
-    {
-        float dx = (x - this->m_currentX) * this->m_senesitivity * (1.0f / this->m_zoomFactor);
-        float dy = (y - this->m_currentY) * this->m_senesitivity * (1.0f / this->m_zoomFactor);
-        float angleY = dy * 180.0f / PI;
-        float angleX = -(dx * 180.0f / PI);
-        this->m_currentX = x;
-        this->m_currentY = y;
-        this->pitch(angleY);
-        this->yaw(angleX);
+    else if (button == GLFW_MOUSE_BUTTON_LEFT && action == GLFW_RELEASE) {
+        m_leftMouseDown = false;
+        m_firstCursorMove = true;
+        return;
     }
 }
 
-void GameCameraControl::onCursor(double x, double y)
+void GameCameraControl::onCursor(float x, float y)
 {
-    if (y > 0) {
-        this->m_zoomFactor += 0.01f;
-        this->m_camera->m_position.z -= 0.01f;
+    if (m_firstCursorMove) {
+        m_currentX = x;
+        m_currentY = y;
+        m_firstCursorMove = false;
+        return;
     }
-    else {
-        this->m_zoomFactor -= 0.01f;
-        this->m_camera->m_position.z += 0.01f;
+    if (m_leftMouseDown) {
+        float xoffset = x - m_currentX;
+        float yoffset = m_currentY - y;
+        m_currentX = x;
+        m_currentY = y;
+        xoffset *= this->m_sensitivity;
+        yoffset *= this->m_sensitivity;
+        this->m_yaw += xoffset;
+        this->m_pitch += yoffset;
+        if (this->m_pitch > 89.0f) {
+            this->m_pitch = 89.0f;
+        }
+        if (this->m_pitch < -89.0f) {
+            this->m_pitch = -89.0f;
+        }
+        glm::vec3 front{};
+        front.x = cos(glm::radians(this->m_yaw)) * cos(glm::radians(this->m_pitch));
+        front.y = sin(glm::radians(this->m_pitch));
+        front.z = sin(glm::radians(this->m_yaw)) * cos(glm::radians(this->m_pitch));
+        std::cout << glm::to_string(front) << std::endl;
+        this->m_camera->m_front = glm::normalize(front);
     }
 }
 
 void GameCameraControl::onKey(int key, int action, int mods)
 {
-    float x_dir{}, z_dir{};
-    switch (key)
-    {
-    case GLFW_KEY_W:
-        this->m_keyMap[GLFW_KEY_W] = (action == GLFW_PRESS ? true : false);
-        z_dir = -3.0f * this->m_senesitivity * (1.0f / this->m_zoomFactor);
-        if (this->m_keyMap[GLFW_KEY_S])
-            z_dir = 0;
-        this->m_camera->m_position.z += z_dir;
-        break;
-    case GLFW_KEY_S:
-        this->m_keyMap[GLFW_KEY_S] = (action == GLFW_PRESS ? true : false);
-        z_dir = 3.0f * this->m_senesitivity * (1.0f / this->m_zoomFactor);
-        if (this->m_keyMap[GLFW_KEY_W])
-            z_dir = 0;
-        this->m_camera->m_position.z += z_dir;
-        break;
-    case GLFW_KEY_A:
-        this->m_keyMap[GLFW_KEY_A] = (action == GLFW_PRESS ? true : false);
-        x_dir = -3.0f * this->m_senesitivity * (1.0f / this->m_zoomFactor);
-        if (this->m_keyMap[GLFW_KEY_D])
-            x_dir = 0;
-        this->m_camera->m_position.x += x_dir;
-        break;
-    case GLFW_KEY_D:
-        this->m_keyMap[GLFW_KEY_D] = (action == GLFW_PRESS ? true : false);
-        x_dir = 3.0f * this->m_senesitivity * (1.0f / this->m_zoomFactor);
-        if (this->m_keyMap[GLFW_KEY_A])
-            x_dir = 0;
-        this->m_camera->m_position.x += x_dir;
-        break;
-    default:
-        std::cout << "unsupported key: " << key << std::endl;
-        break;
+    auto left_right_move{
+    [=](int dir) -> void {
+        float speed = m_speed * dir * m_deltaTime;
+        m_camera->m_position += glm::cross(m_camera->m_up, m_camera->m_front) * speed; }
+    };
+
+    auto forward_backward_move{
+        [=](int dir) -> void {
+            float speed = m_speed * dir * m_deltaTime;
+            m_camera->m_position += m_camera->m_front * speed; }
+    };
+
+    if (this->m_keyMap.find(key) != this->m_keyMap.end() &&
+        (action == GLFW_PRESS || action == GLFW_REPEAT)) {
+        switch (int left{ 1 }, right{ -1 }, back{ -1 }, forward{ 1 }; key) {
+        case GLFW_KEY_A:
+            left_right_move(left);
+            break;
+        case GLFW_KEY_D:
+            left_right_move(right);
+            break;
+        case GLFW_KEY_W:
+            forward_backward_move(forward);
+            break;
+        case GLFW_KEY_S:
+            forward_backward_move(back);
+            break;
+        default:
+            break;
+        }
     }
 }
 
-void GameCameraControl::setCamera(Camera_Ptr camera)
+void GameCameraControl::onScroll(float xoffset, float yoffset)
 {
+    if (yoffset > 0) {
+        this->m_camera->m_zoomFactor -= 0.1f;
+    }
+    else if (yoffset < 0) {
+        this->m_camera->m_zoomFactor += 0.1f;
+    }
+}
+
+CameraControl::Camera_Ptr GameCameraControl::setCamera(Camera_Ptr camera)
+{
+    Camera_Ptr oldCamera = this->m_camera;
     this->m_camera = camera;
+    return oldCamera;
 }
 
 void GameCameraControl::setSensitivity(float sensitivity)
 {
-    this->m_senesitivity = sensitivity;
-}
-
-void GameCameraControl::update(Shader*)
-{
-}
-
-void GameCameraControl::pitch(float angle)
-{
-    glm::vec3 pos{ 0.0f, std::cos(angle), angle };
-    this->m_camera->m_up += pos;
-}
-
-void GameCameraControl::yaw(float angle)
-{
-    glm::vec3 pos{ std::cos(angle), 0.0f, angle };
-    this->m_camera->m_right += pos;
+    this->m_sensitivity = sensitivity;
 }

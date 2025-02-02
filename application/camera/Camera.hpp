@@ -10,7 +10,8 @@ public:  // data members
 
     PosType m_position{ 0.0f, 0.0f, 1.0f };
     PosType m_up{ 0.0f, 1.0f, 0.0f };
-    PosType m_right{ 1.0f, 0.0f, 0.0f };
+    PosType m_front{ 0.0f, 0.0f, -1.0f };
+    float m_zoomFactor{ 1.0f };  // 45 degrees FOV by default
 
 public:  // member functions
     Camera() = default;
@@ -19,8 +20,8 @@ public:  // member functions
     Camera(Camera&&) = default;
     Camera& operator=(Camera&&) = default;
     virtual ~Camera() = default;
-    Camera(PosType position, PosType up, PosType right) noexcept;
+    Camera(PosType position, PosType up, PosType front) noexcept;
 
     MatrixType getViewMatrix() const;
-    virtual glm::mat4 getProjectionMatrix() const = 0;
+    virtual MatrixType getProjectionMatrix() = 0;
 };

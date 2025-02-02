@@ -18,7 +18,9 @@ public:  // methods
     PerspectiveCamera(PerspectiveCamera&&) = default;
     PerspectiveCamera& operator=(PerspectiveCamera&&) = default;
 
+    PerspectiveCamera(float fovy, float aspect, float near, float far,
+        PosType position, PosType up, PosType front);
     PerspectiveCamera(float fovy, float aspect, float near, float far);
 
-    glm::mat4 getProjectionMatrix() const override final;
+    glm::mat4 getProjectionMatrix()override final;
 };

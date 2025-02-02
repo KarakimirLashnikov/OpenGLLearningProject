@@ -22,6 +22,8 @@ public:
 
     OrthographicCamera(float left, float right, float top,
         float bottom, float near, float far) noexcept;
+    OrthographicCamera(float left, float right, float top, float bottom, float near, float far,
+        PosType pos, PosType up, PosType front) noexcept;
 
-    glm::mat4 getProjectionMatrix() const override final;
+    glm::mat4 getProjectionMatrix()override final;
 };

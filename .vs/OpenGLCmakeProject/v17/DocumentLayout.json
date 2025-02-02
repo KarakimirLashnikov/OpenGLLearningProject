@@ -3,24 +3,19 @@
   "WorkspaceRootPath": "D:\\MyCode\\OpenGLCmakeProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\MyCode\\OpenGLCmakeProject\\application\\camera\\GameCameraControl.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:application\\camera\\GameCameraControl.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\MyCode\\OpenGLCmakeProject\\src\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\MyCode\\OpenGLCmakeProject\\application\\camera\\GameCameraControl.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:application\\camera\\GameCameraControl.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\MyCode\\OpenGLCmakeProject\\application\\camera\\GameCameraControl.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:application\\camera\\GameCameraControl.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\MyCode\\OpenGLCmakeProject\\application\\camera\\PerspectiveCamera.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:application\\camera\\PerspectiveCamera.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Visual_Studio_2022\\VC\\Tools\\MSVC\\14.43.34808\\include\\memory||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\MyCode\\OpenGLCmakeProject\\include\\OpenGLCmakeProject.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:include\\OpenGLCmakeProject.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\MyCode\\OpenGLCmakeProject\\application\\camera\\OthographicCamera.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:application\\camera\\OthographicCamera.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\MyCode\\OpenGLCmakeProject\\application\\camera\\Camera.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -31,40 +26,40 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:application\\camera\\PerspectiveCamera.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\MyCode\\OpenGLCmakeProject\\application\\camera\\GameCameraControl.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:application\\camera\\GameCameraControl.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\MyCode\\OpenGLCmakeProject\\application\\camera\\TrackBallControl.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:application\\camera\\TrackBallControl.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\MyCode\\OpenGLCmakeProject\\application\\camera\\TrackBallControl.cpp||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:application\\camera\\TrackBallControl.cpp||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\MyCode\\OpenGLCmakeProject\\application\\camera\\CameraControl.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:application\\camera\\CameraControl.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\MyCode\\OpenGLCmakeProject\\dependency\\include\\glm\\detail\\func_geometric.inl||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:dependency\\include\\glm\\detail\\func_geometric.inl||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\MyCode\\OpenGLCmakeProject\\application\\camera\\PerspectiveCamera.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:application\\camera\\PerspectiveCamera.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\MyCode\\OpenGLCmakeProject\\application\\camera\\Camera.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:application\\camera\\Camera.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\MyCode\\OpenGLCmakeProject\\application\\camera\\OrthographicCamera.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:application\\camera\\OrthographicCamera.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\MyCode\\OpenGLCmakeProject\\glframework\\shader.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:glframework\\shader.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\MyCode\\OpenGLCmakeProject\\application\\CMakeLists.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:application\\CMakeLists.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\MyCode\\OpenGLCmakeProject\\include\\OpenGLCmakeProject.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:include\\OpenGLCmakeProject.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\MyCode\\OpenGLCmakeProject\\CMakeLists.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CMakeLists.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\MyCode\\OpenGLCmakeProject\\assets\\shaders\\vertex.glsl||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\shaders\\vertex.glsl||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\MyCode\\OpenGLCmakeProject\\assets\\shaders\\fragment.glsl||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\shaders\\fragment.glsl||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\MyCode\\OpenGLCmakeProject\\application\\camera\\OthographicCamera.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:application\\camera\\OthographicCamera.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\MyCode\\OpenGLCmakeProject\\application\\CMakeLists.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:application\\CMakeLists.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -74,7 +69,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 12,
+          "SelectedChildIndex": 16,
           "Children": [
             {
               "$type": "Bookmark",
@@ -111,202 +106,193 @@
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "PerspectiveCamera.hpp",
-              "DocumentMoniker": "D:\\MyCode\\OpenGLCmakeProject\\application\\camera\\PerspectiveCamera.hpp",
-              "RelativeDocumentMoniker": "application\\camera\\PerspectiveCamera.hpp",
-              "ToolTip": "D:\\MyCode\\OpenGLCmakeProject\\application\\camera\\PerspectiveCamera.hpp",
-              "RelativeToolTip": "application\\camera\\PerspectiveCamera.hpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-02-01T13:47:19.167Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "OpenGLCmakeProject.h",
-              "DocumentMoniker": "D:\\MyCode\\OpenGLCmakeProject\\include\\OpenGLCmakeProject.h",
-              "RelativeDocumentMoniker": "include\\OpenGLCmakeProject.h",
-              "ToolTip": "D:\\MyCode\\OpenGLCmakeProject\\include\\OpenGLCmakeProject.h",
-              "RelativeToolTip": "include\\OpenGLCmakeProject.h",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABEAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-01-31T08:41:07.327Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "CMakeLists.txt",
-              "DocumentMoniker": "D:\\MyCode\\OpenGLCmakeProject\\CMakeLists.txt",
-              "RelativeDocumentMoniker": "CMakeLists.txt",
-              "ToolTip": "D:\\MyCode\\OpenGLCmakeProject\\CMakeLists.txt",
-              "RelativeToolTip": "CMakeLists.txt",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAABQAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2025-01-31T08:50:24.142Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PerspectiveCamera.cpp",
-              "DocumentMoniker": "D:\\MyCode\\OpenGLCmakeProject\\application\\camera\\PerspectiveCamera.cpp",
-              "RelativeDocumentMoniker": "application\\camera\\PerspectiveCamera.cpp",
-              "ToolTip": "D:\\MyCode\\OpenGLCmakeProject\\application\\camera\\PerspectiveCamera.cpp",
-              "RelativeToolTip": "application\\camera\\PerspectiveCamera.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-01-31T10:39:59.566Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "GameCameraControl.cpp",
-              "DocumentMoniker": "D:\\MyCode\\OpenGLCmakeProject\\application\\camera\\GameCameraControl.cpp",
-              "RelativeDocumentMoniker": "application\\camera\\GameCameraControl.cpp",
-              "ToolTip": "D:\\MyCode\\OpenGLCmakeProject\\application\\camera\\GameCameraControl.cpp",
-              "RelativeToolTip": "application\\camera\\GameCameraControl.cpp",
-              "ViewState": "AgIAABQAAAAAAAAAAAA1wB4AAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-01-31T08:54:59.53Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "GameCameraControl.hpp",
               "DocumentMoniker": "D:\\MyCode\\OpenGLCmakeProject\\application\\camera\\GameCameraControl.hpp",
               "RelativeDocumentMoniker": "application\\camera\\GameCameraControl.hpp",
               "ToolTip": "D:\\MyCode\\OpenGLCmakeProject\\application\\camera\\GameCameraControl.hpp",
               "RelativeToolTip": "application\\camera\\GameCameraControl.hpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-01-31T08:58:32.543Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "main.cpp",
-              "DocumentMoniker": "D:\\MyCode\\OpenGLCmakeProject\\src\\main.cpp",
-              "RelativeDocumentMoniker": "src\\main.cpp",
-              "ToolTip": "D:\\MyCode\\OpenGLCmakeProject\\src\\main.cpp",
-              "RelativeToolTip": "src\\main.cpp",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAACEAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-01-31T04:11:57.927Z",
+              "DocumentIndex": 7,
+              "Title": "TrackBallControl.hpp",
+              "DocumentMoniker": "D:\\MyCode\\OpenGLCmakeProject\\application\\camera\\TrackBallControl.hpp",
+              "RelativeDocumentMoniker": "application\\camera\\TrackBallControl.hpp",
+              "ToolTip": "D:\\MyCode\\OpenGLCmakeProject\\application\\camera\\TrackBallControl.hpp",
+              "RelativeToolTip": "application\\camera\\TrackBallControl.hpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-02-02T01:08:52.497Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
+              "Title": "TrackBallControl.cpp",
+              "DocumentMoniker": "D:\\MyCode\\OpenGLCmakeProject\\application\\camera\\TrackBallControl.cpp",
+              "RelativeDocumentMoniker": "application\\camera\\TrackBallControl.cpp",
+              "ToolTip": "D:\\MyCode\\OpenGLCmakeProject\\application\\camera\\TrackBallControl.cpp",
+              "RelativeToolTip": "application\\camera\\TrackBallControl.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-02-02T01:04:05.358Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PerspectiveCamera.hpp",
+              "DocumentMoniker": "D:\\MyCode\\OpenGLCmakeProject\\application\\camera\\PerspectiveCamera.hpp",
+              "RelativeDocumentMoniker": "application\\camera\\PerspectiveCamera.hpp",
+              "ToolTip": "D:\\MyCode\\OpenGLCmakeProject\\application\\camera\\PerspectiveCamera.hpp",
+              "RelativeToolTip": "application\\camera\\PerspectiveCamera.hpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-02-02T00:32:08.537Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "OthographicCamera.cpp",
+              "DocumentMoniker": "D:\\MyCode\\OpenGLCmakeProject\\application\\camera\\OthographicCamera.cpp",
+              "RelativeDocumentMoniker": "application\\camera\\OthographicCamera.cpp",
+              "ToolTip": "D:\\MyCode\\OpenGLCmakeProject\\application\\camera\\OthographicCamera.cpp",
+              "RelativeToolTip": "application\\camera\\OthographicCamera.cpp",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABMAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-02-02T01:08:42.53Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Camera.hpp",
+              "DocumentMoniker": "D:\\MyCode\\OpenGLCmakeProject\\application\\camera\\Camera.hpp",
+              "RelativeDocumentMoniker": "application\\camera\\Camera.hpp",
+              "ToolTip": "D:\\MyCode\\OpenGLCmakeProject\\application\\camera\\Camera.hpp",
+              "RelativeToolTip": "application\\camera\\Camera.hpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-02-02T02:28:37.477Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GameCameraControl.cpp",
+              "DocumentMoniker": "D:\\MyCode\\OpenGLCmakeProject\\application\\camera\\GameCameraControl.cpp",
+              "RelativeDocumentMoniker": "application\\camera\\GameCameraControl.cpp",
+              "ToolTip": "D:\\MyCode\\OpenGLCmakeProject\\application\\camera\\GameCameraControl.cpp",
+              "RelativeToolTip": "application\\camera\\GameCameraControl.cpp",
+              "ViewState": "AgIAADYAAAAAAAAAAIA6wD0AAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-01-31T08:54:59.53Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "CameraControl.hpp",
               "DocumentMoniker": "D:\\MyCode\\OpenGLCmakeProject\\application\\camera\\CameraControl.hpp",
               "RelativeDocumentMoniker": "application\\camera\\CameraControl.hpp",
               "ToolTip": "D:\\MyCode\\OpenGLCmakeProject\\application\\camera\\CameraControl.hpp",
               "RelativeToolTip": "application\\camera\\CameraControl.hpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAABAAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-01-31T08:54:03.338Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Camera.hpp",
-              "DocumentMoniker": "D:\\MyCode\\OpenGLCmakeProject\\application\\camera\\Camera.hpp",
-              "RelativeDocumentMoniker": "application\\camera\\Camera.hpp",
-              "ToolTip": "D:\\MyCode\\OpenGLCmakeProject\\application\\camera\\Camera.hpp",
-              "RelativeToolTip": "application\\camera\\Camera.hpp",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAjwBcAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-01-31T08:52:08.846Z",
+              "DocumentIndex": 0,
+              "Title": "main.cpp",
+              "DocumentMoniker": "D:\\MyCode\\OpenGLCmakeProject\\src\\main.cpp",
+              "RelativeDocumentMoniker": "src\\main.cpp",
+              "ToolTip": "D:\\MyCode\\OpenGLCmakeProject\\src\\main.cpp",
+              "RelativeToolTip": "src\\main.cpp",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-01-31T04:11:57.927Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Camera.cpp",
-              "DocumentMoniker": "D:\\MyCode\\OpenGLCmakeProject\\application\\camera\\Camera.cpp",
-              "RelativeDocumentMoniker": "application\\camera\\Camera.cpp",
-              "ToolTip": "D:\\MyCode\\OpenGLCmakeProject\\application\\camera\\Camera.cpp",
-              "RelativeToolTip": "application\\camera\\Camera.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-01-31T11:00:02.432Z"
+              "DocumentIndex": 12,
+              "Title": "OpenGLCmakeProject.h",
+              "DocumentMoniker": "D:\\MyCode\\OpenGLCmakeProject\\include\\OpenGLCmakeProject.h",
+              "RelativeDocumentMoniker": "include\\OpenGLCmakeProject.h",
+              "ToolTip": "D:\\MyCode\\OpenGLCmakeProject\\include\\OpenGLCmakeProject.h",
+              "RelativeToolTip": "include\\OpenGLCmakeProject.h",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABQAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-02-02T02:37:20.963Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "func_geometric.inl",
-              "DocumentMoniker": "D:\\MyCode\\OpenGLCmakeProject\\dependency\\include\\glm\\detail\\func_geometric.inl",
-              "RelativeDocumentMoniker": "dependency\\include\\glm\\detail\\func_geometric.inl",
-              "ToolTip": "D:\\MyCode\\OpenGLCmakeProject\\dependency\\include\\glm\\detail\\func_geometric.inl",
-              "RelativeToolTip": "dependency\\include\\glm\\detail\\func_geometric.inl",
-              "ViewState": "AgIAAKsAAAAAAAAAAAA7wLAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2025-01-31T10:59:54.191Z"
+              "DocumentIndex": 2,
+              "Title": "memory",
+              "DocumentMoniker": "D:\\Visual_Studio_2022\\VC\\Tools\\MSVC\\14.43.34808\\include\\memory",
+              "RelativeDocumentMoniker": "..\\..\\Visual_Studio_2022\\VC\\Tools\\MSVC\\14.43.34808\\include\\memory",
+              "ToolTip": "D:\\Visual_Studio_2022\\VC\\Tools\\MSVC\\14.43.34808\\include\\memory",
+              "RelativeToolTip": "..\\..\\Visual_Studio_2022\\VC\\Tools\\MSVC\\14.43.34808\\include\\memory",
+              "ViewState": "AgIAAP4NAAAAAAAAAAA6wAkOAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-02-02T04:30:30.42Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
+              "Title": "OrthographicCamera.hpp",
+              "DocumentMoniker": "D:\\MyCode\\OpenGLCmakeProject\\application\\camera\\OrthographicCamera.hpp",
+              "RelativeDocumentMoniker": "application\\camera\\OrthographicCamera.hpp",
+              "ToolTip": "D:\\MyCode\\OpenGLCmakeProject\\application\\camera\\OrthographicCamera.hpp",
+              "RelativeToolTip": "application\\camera\\OrthographicCamera.hpp",
+              "ViewState": "AgIAABMAAAAAAAAAAAAkwBsAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-02-02T01:08:45.226Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "PerspectiveCamera.cpp",
+              "DocumentMoniker": "D:\\MyCode\\OpenGLCmakeProject\\application\\camera\\PerspectiveCamera.cpp",
+              "RelativeDocumentMoniker": "application\\camera\\PerspectiveCamera.cpp",
+              "ToolTip": "D:\\MyCode\\OpenGLCmakeProject\\application\\camera\\PerspectiveCamera.cpp",
+              "RelativeToolTip": "application\\camera\\PerspectiveCamera.cpp",
+              "ViewState": "AgIAAAEAAAAAAAAAAIA6wAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-02-02T02:26:25.99Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "CMakeLists.txt",
               "DocumentMoniker": "D:\\MyCode\\OpenGLCmakeProject\\application\\CMakeLists.txt",
               "RelativeDocumentMoniker": "application\\CMakeLists.txt",
               "ToolTip": "D:\\MyCode\\OpenGLCmakeProject\\application\\CMakeLists.txt",
               "RelativeToolTip": "application\\CMakeLists.txt",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2025-01-31T10:53:40.838Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "shader.hpp",
-              "DocumentMoniker": "D:\\MyCode\\OpenGLCmakeProject\\glframework\\shader.hpp",
-              "RelativeDocumentMoniker": "glframework\\shader.hpp",
-              "ToolTip": "D:\\MyCode\\OpenGLCmakeProject\\glframework\\shader.hpp",
-              "RelativeToolTip": "glframework\\shader.hpp",
-              "ViewState": "AgIAAEQAAAAAAAAAAAAlwFEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-01-31T10:09:25.984Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "OthographicCamera.cpp",
-              "DocumentMoniker": "D:\\MyCode\\OpenGLCmakeProject\\application\\camera\\OthographicCamera.cpp",
-              "RelativeDocumentMoniker": "application\\camera\\OthographicCamera.cpp",
-              "ToolTip": "D:\\MyCode\\OpenGLCmakeProject\\application\\camera\\OthographicCamera.cpp",
-              "RelativeToolTip": "application\\camera\\OthographicCamera.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-01-31T08:52:05.245Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "fragment.glsl",
-              "DocumentMoniker": "D:\\MyCode\\OpenGLCmakeProject\\assets\\shaders\\fragment.glsl",
-              "RelativeDocumentMoniker": "assets\\shaders\\fragment.glsl",
-              "ToolTip": "D:\\MyCode\\OpenGLCmakeProject\\assets\\shaders\\fragment.glsl",
-              "RelativeToolTip": "assets\\shaders\\fragment.glsl",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-01-31T08:49:34.926Z"
+              "WhenOpened": "2025-02-02T01:42:44.722Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 13,
-              "Title": "vertex.glsl",
-              "DocumentMoniker": "D:\\MyCode\\OpenGLCmakeProject\\assets\\shaders\\vertex.glsl",
-              "RelativeDocumentMoniker": "assets\\shaders\\vertex.glsl",
-              "ToolTip": "D:\\MyCode\\OpenGLCmakeProject\\assets\\shaders\\vertex.glsl",
-              "RelativeToolTip": "assets\\shaders\\vertex.glsl",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-01-31T08:49:06.919Z"
+              "Title": "CMakeLists.txt",
+              "DocumentMoniker": "D:\\MyCode\\OpenGLCmakeProject\\CMakeLists.txt",
+              "RelativeDocumentMoniker": "CMakeLists.txt",
+              "ToolTip": "D:\\MyCode\\OpenGLCmakeProject\\CMakeLists.txt",
+              "RelativeToolTip": "CMakeLists.txt",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAACcAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-02-02T01:43:39.332Z"
             }
           ]
         }
