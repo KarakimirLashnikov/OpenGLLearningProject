@@ -14,7 +14,7 @@ public:
     virtual Camera_Ptr setCamera(Camera_Ptr camera) override;
     virtual void setSensitivity(float sensitivity) override;
 private:
-    float m_speed{ 10.0f };
+    float m_speed{ 50.0f };
     bool m_firstCursorMove{ true };
     float m_miniSample{ 0.01f };
 };

@@ -11,3 +11,8 @@ glm::mat4 Camera::getViewMatrix() const
     glm::mat4 viewMatrix{ glm::lookAt(m_position, center, m_up) };
     return viewMatrix;
 }
+
+glm::vec3 Camera::getPosition() const noexcept
+{
+    return this->m_position;
+}

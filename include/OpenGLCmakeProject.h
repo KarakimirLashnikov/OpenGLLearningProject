@@ -17,8 +17,28 @@
 #include <memory>
 using Shader_ptr = std::shared_ptr<Shader>;
 using Camera_ptr = std::unique_ptr<PerspectiveCamera>;
+using Texture_ptr = std::shared_ptr<Texture>;
 
 // const variable
 constexpr int WindowWidth{ 1280 };
 constexpr int WindowHeight{ 720 };
 constexpr const char* WindowTitle{ "OpenGLCmakeProject" };
+
+// function
+#include "OpenGLCmakeProject.h"
+
+void MyResize(int width, int height);
+
+void MyKeyPress(int key, int scancode, int action, int modifiers);
+
+void MyMouseClick(int button, int action, int mods);
+
+void MyMouseScroll(double xoffset, double yoffset);
+
+void MyCursorPos(double x, double y);
+
+void prepare();
+
+void render();
+
+void cleanup();

@@ -21,17 +21,15 @@ void GameCameraControl::onMouse(int button, int action, float x, float y)
 
 void GameCameraControl::onCursor(float x, float y)
 {
-    if (m_firstCursorMove) {
-        m_currentX = x;
-        m_currentY = y;
-        m_firstCursorMove = false;
-        return;
-    }
     if (m_leftMouseDown) {
         float xoffset = x - m_currentX;
         float yoffset = m_currentY - y;
         m_currentX = x;
         m_currentY = y;
+        if (m_firstCursorMove) {
+            m_firstCursorMove = false;
+            return;
+        }
         xoffset *= this->m_sensitivity;
         yoffset *= this->m_sensitivity;
         this->m_yaw += xoffset;
@@ -43,10 +41,9 @@ void GameCameraControl::onCursor(float x, float y)
             this->m_pitch = -89.0f;
         }
         glm::vec3 front{};
-        front.x = cos(glm::radians(this->m_yaw)) * cos(glm::radians(this->m_pitch));
+        front.z = -cos(glm::radians(this->m_yaw)) * cos(glm::radians(this->m_pitch));
         front.y = sin(glm::radians(this->m_pitch));
-        front.z = sin(glm::radians(this->m_yaw)) * cos(glm::radians(this->m_pitch));
-        std::cout << glm::to_string(front) << std::endl;
+        front.x = sin(glm::radians(this->m_yaw)) * cos(glm::radians(this->m_pitch));
         this->m_camera->m_front = glm::normalize(front);
     }
 }
@@ -67,23 +64,35 @@ void GameCameraControl::onKey(int key, int action, int mods)
 
     if (this->m_keyMap.find(key) != this->m_keyMap.end() &&
         (action == GLFW_PRESS || action == GLFW_REPEAT)) {
+        this->m_keyMap[key] = true;
         switch (int left{ 1 }, right{ -1 }, back{ -1 }, forward{ 1 }; key) {
         case GLFW_KEY_A:
+            if (m_keyMap[GLFW_KEY_D]) goto EXIT_POINT;
             left_right_move(left);
             break;
         case GLFW_KEY_D:
+            if (m_keyMap[GLFW_KEY_A]) goto EXIT_POINT;
             left_right_move(right);
             break;
         case GLFW_KEY_W:
+            if (m_keyMap[GLFW_KEY_S]) goto EXIT_POINT;
             forward_backward_move(forward);
             break;
         case GLFW_KEY_S:
+            if (m_keyMap[GLFW_KEY_W]) goto EXIT_POINT;
             forward_backward_move(back);
             break;
         default:
-            break;
+            goto EXIT_POINT;
         }
     }
+
+    if (action == GLFW_RELEASE && this->m_keyMap.find(key) != this->m_keyMap.end()) {
+        this->m_keyMap[key] = false;
+    }
+
+EXIT_POINT:
+    return;
 }
 
 void GameCameraControl::onScroll(float xoffset, float yoffset)

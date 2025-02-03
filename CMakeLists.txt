@@ -38,7 +38,7 @@ add_executable (
 	OpenGLCmakeProject 
 	"src/glad.c"
 	"src/main.cpp"
-)
+ "src/callback.cpp")
 
 # 链接库
 target_link_libraries(

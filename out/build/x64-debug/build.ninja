@@ -67,6 +67,15 @@ build CMakeFiles\OpenGLCmakeProject.dir\src\main.cpp.obj: CXX_COMPILER__OpenGLCm
   TARGET_COMPILE_PDB = CMakeFiles\OpenGLCmakeProject.dir\
   TARGET_PDB = OpenGLCmakeProject.pdb
 
+build CMakeFiles\OpenGLCmakeProject.dir\src\callback.cpp.obj: CXX_COMPILER__OpenGLCmakeProject_unscanned_Debug D$:\MyCode\OpenGLCmakeProject\src\callback.cpp || cmake_object_order_depends_target_OpenGLCmakeProject
+  DEFINES = -DDEBUG
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++20 -ZI
+  INCLUDES = -ID:\MyCode\OpenGLCmakeProject -ID:\MyCode\OpenGLCmakeProject\include -ID:\MyCode\OpenGLCmakeProject\dependency\include
+  OBJECT_DIR = CMakeFiles\OpenGLCmakeProject.dir
+  OBJECT_FILE_DIR = CMakeFiles\OpenGLCmakeProject.dir\src
+  TARGET_COMPILE_PDB = CMakeFiles\OpenGLCmakeProject.dir\
+  TARGET_PDB = OpenGLCmakeProject.pdb
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target OpenGLCmakeProject
@@ -75,7 +84,7 @@ build CMakeFiles\OpenGLCmakeProject.dir\src\main.cpp.obj: CXX_COMPILER__OpenGLCm
 #############################################
 # Link the executable OpenGLCmakeProject.exe
 
-build OpenGLCmakeProject.exe: CXX_EXECUTABLE_LINKER__OpenGLCmakeProject_Debug CMakeFiles\OpenGLCmakeProject.dir\src\glad.c.obj CMakeFiles\OpenGLCmakeProject.dir\src\main.cpp.obj | wrapper\wrapper.lib application\app.lib glframework\GLFramework.lib || application\app.lib glframework\GLFramework.lib wrapper\wrapper.lib
+build OpenGLCmakeProject.exe: CXX_EXECUTABLE_LINKER__OpenGLCmakeProject_Debug CMakeFiles\OpenGLCmakeProject.dir\src\glad.c.obj CMakeFiles\OpenGLCmakeProject.dir\src\main.cpp.obj CMakeFiles\OpenGLCmakeProject.dir\src\callback.cpp.obj | wrapper\wrapper.lib application\app.lib glframework\GLFramework.lib || application\app.lib glframework\GLFramework.lib wrapper\wrapper.lib
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -ZI
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
   LINK_LIBRARIES = opengl32.lib  glfw3.lib  soil2-debug.lib  wrapper\wrapper.lib  application\app.lib  glframework\GLFramework.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib

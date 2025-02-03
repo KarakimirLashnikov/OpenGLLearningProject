@@ -16,7 +16,8 @@ concept UniformVariableType = (
     std::same_as<T, float> ||
     std::same_as<T, int> ||
     std::same_as<T, bool> ||
-    std::same_as<T, glm::mat4>
+    std::same_as<T, glm::mat4> ||
+    std::same_as<T, glm::vec3>
     );
 
 class Shader
@@ -193,4 +194,12 @@ inline void Shader::setUniform_impl<1, glm::mat4>(
     GLint location{ glGetUniformLocation(this->m_program, name.data()) };
     // glm and opengl use column-major order
     GLCALL(glUniformMatrix4fv(location, 1, GL_FALSE, glm::value_ptr(value)));
+}
+
+template <>
+inline void Shader::setUniform_impl<1, glm::vec3>(
+    const std::string_view name, glm::vec3 value) const
+{
+    GLint location{ glGetUniformLocation(this->m_program, name.data()) };
+    GLCALL(glUniform3fv(location, 1, glm::value_ptr(value)));
 }
