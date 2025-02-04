@@ -15,12 +15,11 @@
     "",
     "\\application",
     "\\application\\camera",
-    "\\assets",
     "\\assets\\shaders",
-    "\\assets\\textures",
     "\\glframework",
-    "\\src"
+    "\\src",
+    "\\wrapper"
   ],
-  "SelectedNode": "\\assets\\shaders\\vertex.glsl",
+  "SelectedNode": "\\wrapper\\checkError.hpp",
   "PreviewInSolutionExplorer": false
 }

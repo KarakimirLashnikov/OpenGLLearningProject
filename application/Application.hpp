@@ -2,10 +2,8 @@
 #include <mutex>
 #include "glframework/core.h"
 #include "wrapper/checkError.hpp"
-#include <iostream>
-#include <vector>
+#include <unordered_map>
 #include <variant>
-#include <functional>
 #include <concepts>
 #include <cassert>
 
@@ -16,20 +14,21 @@ concept Callable = requires(T t, Args... args) {
     { t(args...) } -> std::same_as<void>;
 };
 
-enum SignalType {
+enum CallbackType {
     Resize = 0,  // must start from 0, window resize signal
-    KeyPress,  // key press signal
-    MouseClick,  // mouse button click signal
-    CursorPos,  // mouse cursor move signal
-    MouseScroll,   // mouse scroll signal
-    SignalCount  // must be last 
+    KeyPress = 1,  // key press signal
+    MouseClick = 2,  // mouse button click signal
+    CursorPos = 3,  // mouse cursor move signal
+    MouseScroll = 4,   // mouse scroll signal
+    SignalCount = 5 // must be last 
 };
-union SignalCallback {
-    void (*resizeCallback)(int, int);
-    void (*keyPressedCallback)(int, int, int, int);
-    void (*mouseClickCallback)(int, int, int);
-    void (*cursorPosCallback)(double, double);
-    void (*mouseScrollCallback)(double, double);
+union CallbackFunction {
+    // must have same variable name with CallbackType, because of #define
+    void (*Resize)(int, int);
+    void (*KeyPress)(int, int, int, int);
+    void (*MouseClick)(int, int, int);
+    void (*CursorPos)(double, double);
+    void (*MouseScroll)(double, double);
 };
 
 class Application
@@ -57,11 +56,11 @@ private:
     static void mouseScrollCallback(
         GLFWwindow* window, double xoffset, double yoffset);
 
+    static std::unordered_map<std::size_t, CallbackFunction> s_CallbackMap;
+
     uint32_t m_WindowWidth{};
     uint32_t m_WindowHeight{};
     GLFWwindow* m_WindowHandle{};
-
-    std::vector<SignalCallback> m_Signals;
 
 public:
     static Application* GetInstance();
@@ -74,7 +73,7 @@ public: // member functions
     uint32_t GetWindowHeight() const;
 
     // Set
-    void SetCallbacks(SignalType type, void* callback);
+    void SetCallbacks(CallbackType type, void* func);
 
     void SetWindowSize(uint32_t width, uint32_t height);
 
@@ -85,3 +84,5 @@ public: // member functions
 };
 
 #define theApp Application::GetInstance()
+
+

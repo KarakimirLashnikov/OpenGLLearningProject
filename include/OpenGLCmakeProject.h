@@ -5,7 +5,6 @@
 
 // TODO: 在此处引用程序需要的其他标头。
 #include "glframework/core.h"
-#include "SOIL2/stb_image.h"
 #include "application/Application.hpp"
 #include "glframework/Shader.hpp"
 #include "glframework/texture.hpp"

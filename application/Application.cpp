@@ -1,18 +1,17 @@
 #include "Application.hpp"
+#include <type_traits>
 
 // static instance of Application
 Application* Application::s_Instance{ nullptr };
+std::unordered_map<std::size_t, CallbackFunction> Application::s_CallbackMap{};
 std::mutex Application::s_InstanceMutex{};
 using std::size_t;
 
+#define CALLBACK_FUNCTION(type, ...) std::size_t index{ static_cast<std::size_t>(type)} ; if (Application::s_CallbackMap.find(index) != Application::s_CallbackMap.end()) {CallbackFunction __callback_func_##type{ Application::s_CallbackMap[index] }; __callback_func_##type.##type(__VA_ARGS__); }
+
 Application::Application()
     : m_WindowHandle{ nullptr }
-    , m_Signals{ static_cast<size_t>(SignalType::SignalCount) }
 {
-    for (size_t i = 0; i < m_Signals.size(); ++i) {
-        m_Signals[i].resizeCallback = nullptr;
-        m_Signals[i].keyPressedCallback = nullptr;
-    }
 }
 
 void Application::registrationCallback(GLFWwindow* window)
@@ -27,53 +26,29 @@ void Application::registrationCallback(GLFWwindow* window)
 void Application::framebufferResizeCallback(GLFWwindow* window, int width, int height)
 {
     auto self{ static_cast<Application*>(glfwGetWindowUserPointer(window)) };
-    auto resizeCallback = self->m_Signals[SignalType::Resize].resizeCallback;
-    if (resizeCallback != nullptr)
-    {
-        resizeCallback(width, height);
-    }
+    CALLBACK_FUNCTION(Resize, width, height);
     self->SetWindowSize(width, height);
 }
 
 void Application::keyPressedCallback(
     GLFWwindow* window, int key, int scancode, int action, int mods)
 {
-    auto self{ static_cast<Application*>(glfwGetWindowUserPointer(window)) };
-    auto keyCallback = self->m_Signals[SignalType::KeyPress].keyPressedCallback;
-    if (keyCallback != nullptr)
-    {
-        keyCallback(key, scancode, action, mods);
-    }
+    CALLBACK_FUNCTION(KeyPress, key, scancode, action, mods);
 }
 
 void Application::mousClickCallback(GLFWwindow* window, int button, int action, int mods)
 {
-    auto self{ static_cast<Application*>(glfwGetWindowUserPointer(window)) };
-    auto mouseCallback = self->m_Signals[SignalType::MouseClick].mouseClickCallback;
-    if (mouseCallback != nullptr)
-    {
-        mouseCallback(button, action, mods);
-    }
+    CALLBACK_FUNCTION(MouseClick, button, action, mods);
 }
 
 void Application::cursorPosCallback(GLFWwindow* window, double xpos, double ypos)
 {
-    auto self{ static_cast<Application*>(glfwGetWindowUserPointer(window)) };
-    auto cursorPosCallback = self->m_Signals[SignalType::CursorPos].cursorPosCallback;
-    if (cursorPosCallback != nullptr)
-    {
-        cursorPosCallback(xpos, ypos);
-    }
+    CALLBACK_FUNCTION(CursorPos, xpos, ypos);
 }
 
 void Application::mouseScrollCallback(GLFWwindow* window, double xoffset, double yoffset)
 {
-    auto self{ static_cast<Application*>(glfwGetWindowUserPointer(window)) };
-    auto mouseScrollCallback = self->m_Signals[SignalType::MouseScroll].mouseScrollCallback;
-    if (mouseScrollCallback != nullptr)
-    {
-        mouseScrollCallback(xoffset, yoffset);
-    }
+    CALLBACK_FUNCTION(MouseScroll, xoffset, yoffset);
 }
 
 Application* Application::GetInstance()
@@ -100,6 +75,34 @@ uint32_t Application::GetWindowHeight() const
     return this->m_WindowHeight;
 }
 
+#define SET_CALLBACK_FUNC(type, index, func) s_CallbackMap[index].##type = func
+
+void Application::SetCallbacks(CallbackType type, void* func)
+{
+    std::size_t index{ static_cast<std::size_t>(type) };
+    switch (type) {
+    case CallbackType::Resize:
+        SET_CALLBACK_FUNC(Resize, index, reinterpret_cast<void(*)(int, int)>(func));
+        break;
+    case CallbackType::KeyPress:
+        SET_CALLBACK_FUNC(KeyPress, index, reinterpret_cast<void(*)(int, int, int, int)>(func));
+        break;
+    case CallbackType::MouseClick:
+        SET_CALLBACK_FUNC(MouseClick, index, reinterpret_cast<void(*)(int, int, int)>(func));
+        break;
+    case CallbackType::CursorPos:
+        SET_CALLBACK_FUNC(CursorPos, index, reinterpret_cast<void(*)(double, double)>(func));
+        break;
+    case CallbackType::MouseScroll:
+        SET_CALLBACK_FUNC(MouseScroll, index, reinterpret_cast<void(*)(double, double)>(func));
+        break;
+    default:
+        // invalid callback type
+        assert(false);
+        break;
+    }
+}
+
 void Application::SetWindowSize(uint32_t width, uint32_t height)
 {
     this->m_WindowWidth = width;
@@ -110,7 +113,8 @@ bool Application::Initialize(uint32_t width, uint32_t height, const char* title)
 {
     if (!glfwInit())
     {
-        std::cerr << "Failed to initialize GLFW" << std::endl;
+        // glfw failed to initialize
+        assert(false);
         return false;
     }
 
@@ -125,7 +129,8 @@ bool Application::Initialize(uint32_t width, uint32_t height, const char* title)
         this->m_WindowWidth, this->m_WindowHeight, title, nullptr, nullptr);
     if (this->m_WindowHandle == nullptr)
     {
-        std::cerr << "Failed to create GLFW window" << std::endl;
+        // glfw window creation failed
+        assert(false);
         glfwTerminate();
         return false;
     }
@@ -135,7 +140,8 @@ bool Application::Initialize(uint32_t width, uint32_t height, const char* title)
     // load OpenGL functions
     if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress))
     {
-        std::cerr << "Failed to initialize GLAD" << std::endl;
+        // glad failed to load OpenGL functions
+        assert(false);
         glfwTerminate();
         return false;
     }
@@ -164,30 +170,4 @@ bool Application::Destroy()
     s_Instance = nullptr;
     glfwTerminate();
     return true;
-}
-
-
-void Application::SetCallbacks(SignalType type, void* callback)
-{
-    assert(type < SignalCount);
-    switch (type) {
-    case Resize:
-        m_Signals[type].resizeCallback = reinterpret_cast<void (*)(int, int)>(callback);
-        break;
-    case KeyPress:
-        m_Signals[type].keyPressedCallback = reinterpret_cast<void (*)(int, int, int, int)>(callback);
-        break;
-    case MouseClick:
-        m_Signals[type].mouseClickCallback = reinterpret_cast<void (*)(int, int, int)>(callback);
-        break;
-    case CursorPos:
-        m_Signals[type].cursorPosCallback = reinterpret_cast<void (*)(double, double)>(callback);
-        break;
-    case MouseScroll:
-        m_Signals[type].mouseScrollCallback = reinterpret_cast<void (*)(double, double)>(callback);
-        break;
-    default:
-        assert(false);
-        break;
-    }
 }

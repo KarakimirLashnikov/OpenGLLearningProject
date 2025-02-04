@@ -6,6 +6,7 @@ inline Texture_ptr theTexture{ nullptr };
 inline GameCameraControl* theCameraController{ nullptr };
 inline float xpos{ }, ypos{ };
 inline GLuint vao{}, vbo{}, lightVAO{};
+inline glm::vec3 lightPos{ 1.2f, 1.0f, 2.0f };
 
 // cube vertex data
 GLfloat vertices[] = {
@@ -55,29 +56,20 @@ GLfloat vertices[] = {
 
 void MyResize(int width, int height)
 {
-    /*std::cout << "Resize: " << width << ", " << height << std::endl;*/
     glViewport(0, 0, width, height);
 }
 void MyKeyPress(int key, int scancode, int action, int modifiers)
 {
-    /*std::cout << "Key: " << key << std::endl;
-    std::cout << "Modifiers: " << modifiers << std::endl;
-    std::cout << "Action: " << action << std::endl;
-    std::cout << "Scancode: " << scancode << std::endl;*/
     theCameraController->onKey(key, action, modifiers);
 }
 
 void MyMouseClick(int button, int action, int mods)
 {
-    /*std::cout << "Button: " << button << std::endl;
-    std::cout << "Action: " << action << std::endl;
-    std::cout << "Modifiers: " << mods << std::endl;*/
     theCameraController->onMouse(button, action, xpos, ypos);
 }
 
 void MyMouseScroll(double xoffset, double yoffset)
 {
-    /*std::cout << "Scroll: " << xoffset << ", " << yoffset << std::endl;*/
     theCameraController->onScroll(static_cast<float>(xoffset), static_cast<float>(yoffset));
 }
 
@@ -119,16 +111,17 @@ void prepare()
     theCameraController = new GameCameraControl(theCamera.get());
     glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
 
-    glm::vec3 lightPos{ 1.2f, 1.0f, 2.0f };
     // object shader
     theShader->begin();
     theShader->setUniform<glm::mat4>("projection", theCamera->getProjectionMatrix());
     glm::mat4 transform = glm::mat4(1.0f);
-    //transform = glm::rotate(transform, glm::radians(45.0f), glm::vec3(1.0f, 0.0f, 0.0f));
     theShader->setUniform<glm::mat4>("transform", transform);
-    theShader->setUniform<glm::vec3>("lightColor", glm::vec3(1.0f, 1.0f, 1.0f));
-    theShader->setUniform<glm::vec3>("objectColor", glm::vec3(1.0f, 0.5f, 0.31f));
-    theShader->setUniform<glm::vec3>("lightPos", lightPos);
+    theShader->setUniform<glm::vec3>("material.ambient", glm::vec3(1.0f, 0.5f, 0.31f));
+    theShader->setUniform<glm::vec3>("material.diffuse", glm::vec3(1.0f, 0.5f, 0.31f));
+    theShader->setUniform<glm::vec3>("material.specular", glm::vec3(0.5f, 0.5f, 0.5f));
+    // light 
+    theShader->setUniform<glm::vec3>("light.specular", glm::vec3(1.0f, 1.0f, 1.0f));
+    theShader->setUniform<float>("material.shininess", 32.0f);
     theShader->end();
 
     // light shader
@@ -154,6 +147,12 @@ void render()
     theShader->setUniform<glm::mat4>("view", viewMat);
     theShader->setUniform<glm::mat4>("projection", projMat);
     theShader->setUniform<glm::vec3>("visitorPos", theCamera->getPosition());
+    float currentTime = (float)glfwGetTime();
+    glm::vec3 lightColor{ std::sin(currentTime * 2.0f), std::sin(currentTime * 0.7f),
+        std::sin(currentTime * 1.3f) };
+    theShader->setUniform<glm::vec3>("light.position", lightPos);
+    theShader->setUniform<glm::vec3>("light.ambient", glm::vec3(0.2f) * lightColor);
+    theShader->setUniform<glm::vec3>("light.diffuse", glm::vec3(0.5f) * lightColor);
     GLCALL(glDrawArrays(GL_TRIANGLES, 0, 36));
     theShader->end();
     GLCALL(glBindVertexArray(0));

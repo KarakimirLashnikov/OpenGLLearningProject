@@ -1,17 +1,18 @@
 #include "OpenGLCmakeProject.h"
 
+
 int main()
 {
     if (!theApp->Initialize(::WindowWidth, ::WindowHeight, ::WindowTitle))
     {
         return -1;
     }
-
-    theApp->SetCallbacks(SignalType::Resize, MyResize);
-    theApp->SetCallbacks(SignalType::KeyPress, MyKeyPress);
-    theApp->SetCallbacks(SignalType::MouseClick, MyMouseClick);
-    theApp->SetCallbacks(SignalType::CursorPos, MyCursorPos);
-    theApp->SetCallbacks(SignalType::MouseScroll, MyMouseScroll);
+    std::cout << sizeof((void*)MyResize) << std::endl;
+    theApp->SetCallbacks(CallbackType::Resize, MyResize);
+    theApp->SetCallbacks(CallbackType::KeyPress, MyKeyPress);
+    theApp->SetCallbacks(CallbackType::MouseClick, MyMouseClick);
+    theApp->SetCallbacks(CallbackType::CursorPos, MyCursorPos);
+    theApp->SetCallbacks(CallbackType::MouseScroll, MyMouseScroll);
     prepare();
 
     while (theApp->Update())
