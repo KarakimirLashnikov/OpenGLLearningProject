@@ -15,11 +15,9 @@
     "",
     "\\application",
     "\\application\\camera",
-    "\\assets\\shaders",
     "\\glframework",
     "\\src",
     "\\wrapper"
   ],
-  "SelectedNode": "\\wrapper\\checkError.hpp",
   "PreviewInSolutionExplorer": false
 }

@@ -80,7 +80,7 @@ void MyCursorPos(double x, double y)
     theCameraController->onCursor(xpos, ypos);
 }
 
-void prepare()
+void Prepare()
 {
     // Generate and bind VAO and VBO
     GLCALL(glGenVertexArrays(1, &vao));
@@ -132,7 +132,7 @@ void prepare()
     lightShader->end();
 }
 
-void render()
+void Render()
 {
     theCameraController->begin();
     GLCALL(glBindVertexArray(vao));
@@ -167,7 +167,7 @@ void render()
     GLCALL(glBindVertexArray(0));
 }
 
-void cleanup()
+void Cleanup()
 {
     delete theCameraController;
     theCamera.reset();
@@ -177,4 +177,13 @@ void cleanup()
     GLCALL(glDeleteVertexArrays(1, &vao));
     GLCALL(glDeleteBuffers(1, &vbo));
     GLCALL(glDeleteVertexArrays(1, &lightVAO));
+}
+
+void RigisterCallbacks()
+{
+    Application::SetCallbacks(CallbackType::Resize, MyResize);
+    Application::SetCallbacks(CallbackType::MouseClick, MyMouseClick);
+    Application::SetCallbacks(CallbackType::KeyPress, MyKeyPress);
+    Application::SetCallbacks(CallbackType::MouseScroll, MyMouseScroll);
+    Application::SetCallbacks(CallbackType::CursorPos, MyCursorPos);
 }

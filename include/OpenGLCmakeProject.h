@@ -24,8 +24,6 @@ constexpr int WindowHeight{ 720 };
 constexpr const char* WindowTitle{ "OpenGLCmakeProject" };
 
 // function
-#include "OpenGLCmakeProject.h"
-
 void MyResize(int width, int height);
 
 void MyKeyPress(int key, int scancode, int action, int modifiers);
@@ -36,8 +34,10 @@ void MyMouseScroll(double xoffset, double yoffset);
 
 void MyCursorPos(double x, double y);
 
-void prepare();
+void Prepare();
 
-void render();
+void Render();
 
-void cleanup();
+void Cleanup();
+
+void RigisterCallbacks();
